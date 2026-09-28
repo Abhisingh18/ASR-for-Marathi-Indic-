@@ -176,3 +176,73 @@ else
 fi
 
 lora_targets=[q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj]
+
+hydra_args="
+hydra.run.dir=$OUTPUT_DIR \
+++model_config.file=$code_dir/model/slam_model_asr_new.py:model_factory \
+++model_config.llm_name=gemma-3-4b-it \
+++model_config.llm_path=$LLM_PATH \
+++model_config.llm_dim=2560 \
+++model_config.encoder_name=whisper \
+++dataset_config.mel_size=128 \
+++dataset_config.normalize=true \
+++model_config.encoder_projector_ds_rate=5 \
+++model_config.encoder_path=$ENCODER_PATH \
+++model_config.encoder_dim=1280 \
+++model_config.encoder_projector=linear \
+++dataset_config.dataset=speech_dataset \
+++dataset_config.file=src/slam_llm/datasets/speech_dataset_marathi.py:get_speech_dataset \
+++dataset_config.train_data_path=$TRAIN_JSONL \
+++dataset_config.val_data_path=$DEV_JSONL \
+++dataset_config.input_type=mel \
+++dataset_config.prompt_style=gemma2 \
+++dataset_config.use_history_context=true \
+++train_config.model_name=asr \
+++train_config.num_epochs=$NUM_EPOCHS \
+++train_config.enable_deepspeed=true \
+++train_config.freeze_encoder=true \
+++train_config.freeze_llm=true \
+++train_config.use_peft=true \
+++train_config.peft_config.peft_method=lora \
+++train_config.peft_config.r=8 \
+++train_config.peft_config.lora_alpha=32 \
+++train_config.peft_config.target_modules=$lora_targets \
+++train_config.peft_config.lora_dropout=0.05 \
+++train_config.peft_config.bias=none \
+++train_config.peft_config.task_type=CAUSAL_LM \
+++train_config.batching_strategy=custom \
+++train_config.use_fp16=false \
+++train_config.warmup_steps=1000 \
+++train_config.total_steps=200000 \
+++train_config.lr=1e-4 \
+++train_config.validation_interval=1000 \
+++train_config.checkpoint_interval=1000 \
+++train_config.batch_size_training=4 \
+++train_config.val_batch_size=4 \
+++train_config.num_workers_dataloader=8 \
+++train_config.output_dir=$OUTPUT_DIR \
+$resume_arg \
+++deepspeed_config=$ds_config_path \
+++metric=acc \
+++log_config.log_file=$OUTPUT_DIR/train.log \
+++log_config.use_wandb=$USE_WANDB \
+++log_config.wandb_dir=${WANDB_DIR:-$OUTPUT_DIR} \
+++log_config.wandb_entity_name=$WANDB_ENTITY \
+++log_config.wandb_project_name=$WANDB_PROJECT \
+++log_config.wandb_exp_name=$WANDB_EXP_NAME \
+++log_config.log_interval=5 \
+"
+
+cmd="deepspeed --include=localhost:$GPU_INCLUDE --master_port=$MASTER_PORT $code_dir/deepspeed_finetune_asr_new.py --config-path conf --config-name prompt_marathi_ctx.yaml $hydra_args"
+if [ "${DRYRUN:-0}" = "1" ]; then
+    echo "[DRYRUN] nothing launched. Command that would run:"; echo "$cmd" | tr -s ' ' | sed 's/ \(--\|++\|hydra\.\)/\n  \1/g'
+    exit 0
+fi
+
+deepspeed \
+    --include=localhost:$GPU_INCLUDE \
+    --master_port=$MASTER_PORT \
+    $code_dir/deepspeed_finetune_asr_new.py \
+    --config-path "conf" \
+    --config-name "prompt_marathi_ctx.yaml" \
+    $hydra_args
