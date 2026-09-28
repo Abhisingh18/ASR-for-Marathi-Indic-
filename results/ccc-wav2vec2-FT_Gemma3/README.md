@@ -20,3 +20,6 @@
 | kathbath_noisy | 23.97 |
 | mucs | 27.96 |
 | R12 (preliminary) | see [`../SUMMARY.md`](../SUMMARY.md) |
+
+A second Marathi-fine-tuned encoder family (fairseq wav2vec2 architecture, contrastive+CTC
+pretraining) — close runner-up to the data2vec-AQC encoder above.
