@@ -97,3 +97,35 @@ see [`results/SUMMARY.md`](results/SUMMARY.md) for its preliminary numbers and f
 ├── docs/             architecture, encoders, dataset, training, decoding, resume-fix write-ups
 └── CHANGELOG.md
 ```
+
+## 🚀 Quickstart
+
+```bash
+# 1. Train (pick a script from scripts/training/)
+GPU_INCLUDE=0,1,2,3 bash scripts/training/finetune_data2vec_gemma3_marathi_cs.sh
+
+# 2. Rewrite test-set audio paths to your local layout
+python3 scripts/decoding/rewrite_marathi_testset_paths.py
+
+# 3. Decode
+GPU=6 bash scripts/decoding/inference_data2vec_gemma3_marathi_7testsets.sh
+
+# 4. Score
+bash scripts/decoding/compute_wer_marathi_7testsets.sh
+```
+
+Full walkthrough: [`docs/REPRODUCE.md`](docs/REPRODUCE.md)
+
+## 📚 Documentation
+
+| Doc | Covers |
+|---|---|
+| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | Model diagram, shared design |
+| [`docs/ENCODERS.md`](docs/ENCODERS.md) | Every encoder's params, pretraining, fine-tune status |
+| [`docs/DATASET.md`](docs/DATASET.md) | Train/dev/test data schema and stats |
+| [`docs/TRAINING.md`](docs/TRAINING.md) | Shared hyperparameters |
+| [`docs/RESUME.md`](docs/RESUME.md) | The DeepSpeed checkpoint-resume fix |
+| [`docs/DECODING.md`](docs/DECODING.md) | Decode pipeline + cross-host data transfer |
+| [`docs/ENVIRONMENT.md`](docs/ENVIRONMENT.md) | Software/hardware environment |
+| [`docs/REPRODUCE.md`](docs/REPRODUCE.md) | End-to-end reproduction steps |
+| [`docs/testsets/`](docs/testsets/) | One page per test set |
