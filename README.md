@@ -129,6 +129,8 @@ Full walkthrough: [`docs/REPRODUCE.md`](docs/REPRODUCE.md)
 | [`docs/ENVIRONMENT.md`](docs/ENVIRONMENT.md) | Software/hardware environment |
 | [`docs/REPRODUCE.md`](docs/REPRODUCE.md) | End-to-end reproduction steps |
 | [`docs/testsets/`](docs/testsets/) | One page per test set |
+| [`docs/GLOSSARY.md`](docs/GLOSSARY.md) | WER/CER/SER, LoRA, ZeRO, SLAM-ASR terms |
+| [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) | How to add a new encoder/LLM to the comparison |
 
 ## 📄 License & acknowledgements
 
