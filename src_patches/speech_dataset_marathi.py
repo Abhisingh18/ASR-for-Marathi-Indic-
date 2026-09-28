@@ -441,3 +441,9 @@ class SpeechDatasetJsonl(torch.utils.data.Dataset):
             "modality_mask": modality_mask
         }
 
+
+
+def get_speech_dataset(dataset_config, tokenizer, split):
+    dataset = SpeechDatasetJsonl(dataset_config, tokenizer, split)
+
+    return dataset
