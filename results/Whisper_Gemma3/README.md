@@ -8,3 +8,15 @@
 | Decode script | [`inference_whisper_gemma3_marathi_7testsets.sh`](../../scripts/decoding/inference_whisper_gemma3_marathi_7testsets.sh) |
 | Checkpoint evaluated | epoch 1, step 32,000 |
 | Effective batch | 32 (micro-batch 4 x 4 GPUs x grad-accum 2) |
+
+## WER%
+
+| Test set | WER% |
+|---|---|
+| commonvoice | 29.27 |
+| fleurs | 29.57 |
+| indictts | 18.97 |
+| kathbath | 26.99 |
+| kathbath_noisy | 28.94 |
+| mucs | **26.99** |
+| R12 (preliminary) | see [`../SUMMARY.md`](../SUMMARY.md) |
