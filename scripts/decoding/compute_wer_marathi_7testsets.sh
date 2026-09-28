@@ -22,3 +22,31 @@ testsets=(
     mucs_marathi_test
     R12_marathi_eval_filtered
 )
+
+fail=0
+for split in "${testsets[@]}"; do
+    gt=$decode_dir/decode_${split}_gt
+    pred=$decode_dir/decode_${split}_pred
+    out=$wer_dir/wer_${split}
+
+    if [ ! -s "$gt" ] || [ ! -s "$pred" ]; then
+        echo "$split: NO RESULT (gt/pred missing or empty)" >&2
+        fail=1
+        continue
+    fi
+
+    $py "$script" "$gt" "$pred" "$out"
+done
+
+echo "=== Summary ($wer_dir) ==="
+for split in "${testsets[@]}"; do
+    out=$wer_dir/wer_${split}
+    if [ -f "$out" ]; then
+        echo "$split: $(head -1 "$out")"
+    else
+        echo "$split: MISSING"
+    fi
+done
+if [ $fail -ne 0 ]; then
+    echo "[WARN] some testsets had no result -- check the inference log" >&2
+fi
