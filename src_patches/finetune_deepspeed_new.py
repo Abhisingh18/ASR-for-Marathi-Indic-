@@ -216,3 +216,94 @@ def main(kwargs: DictConfig):
     #                 find_unused_parameters=kwargs.get("train_conf", {}).get("find_unused_parameters", False))
     # elif not train_config.quantization:
     #     model.to(device)
+
+    # dataset_config = generate_dataset_config(train_config, kwargs)
+    logger.info("dataset_config: {}".format(dataset_config))
+    if rank == 0:
+        if log_config.use_wandb:
+            wandb.config.update({"dataset_config": dataset_config}, allow_val_change=True)
+    
+    # Load and preprocess the dataset for training and validation
+    dataset_train = get_preprocessed_dataset(
+        tokenizer,
+        dataset_config,
+        split="train",
+    )
+    if (not (train_config.enable_fsdp or train_config.enable_ddp) or rank == 0) and train_config.batching_strategy != "dynamic":
+        logger.info(f"--> Training Set Length = {len(dataset_train)}")
+    dataset_val = get_preprocessed_dataset(
+        tokenizer,
+        dataset_config,
+        split="val",
+    )
+    if not (train_config.enable_fsdp or train_config.enable_ddp) or rank == 0 and train_config.batching_strategy != "dynamic":
+        logger.info(f"--> Validation Set Length = {len(dataset_val)}")
+    if train_config.batching_strategy == "packing":
+        dataset_train = ConcatDataset(dataset_train, chunk_size=train_config.context_length)
+
+    train_dl_kwargs = get_dataloader_kwargs(train_config, dataset_train, tokenizer, "train")
+
+    # Create DataLoaders for the training and validation dataset
+    train_dataloader = torch.utils.data.DataLoader(
+        dataset_train,
+        num_workers=train_config.num_workers_dataloader,
+        pin_memory=True,
+        **train_dl_kwargs,
+    )
+
+    eval_dataloader = None
+    if train_config.run_validation:
+        if train_config.batching_strategy == "packing":
+            dataset_val = ConcatDataset(dataset_val, chunk_size=train_config.context_length)
+
+        val_dl_kwargs = get_dataloader_kwargs(train_config, dataset_val, tokenizer, "val")
+
+        eval_dataloader = torch.utils.data.DataLoader(
+            dataset_val,
+            num_workers=train_config.num_workers_dataloader,
+            pin_memory=True,
+            **val_dl_kwargs,
+        )
+
+
+    # Resume support: derive (resume_epoch, resume_step) from
+    # train_config.resume_ckpt (a dir like ".../asr_epoch_1_step_17000") so
+    # train()'s built-in fast-forward logic (deepspeed_utils.py) skips the
+    # already-completed dataloader steps and continues the step counter /
+    # wandb graph from where the checkpoint left off, instead of restarting
+    # the epoch/step count at 0 (which also risks overwriting earlier
+    # same-numbered checkpoints). Weight restore itself happens separately
+    # via the top-level `ckpt_path` kwarg (slam_model.py's setup_model()).
+    resume_epoch = 0
+    resume_step = 0
+    resume_ckpt = getattr(train_config, "resume_ckpt", None)
+    if resume_ckpt:
+        m = re.search(r"epoch_(\d+)_step_(\d+)", os.path.basename(str(resume_ckpt).rstrip("/")))
+        if m:
+            resume_epoch = int(m.group(1)) - 1  # 0-indexed epoch
+            resume_step = int(m.group(2))  # dataloader step to resume at (0-indexed)
+            if rank == 0:
+                logger.info(f"[resume] parsed resume_ckpt={resume_ckpt} -> resume_epoch={resume_epoch}, resume_step={resume_step}")
+        elif rank == 0:
+            logger.warning(f"[resume] could not parse epoch/step from resume_ckpt={resume_ckpt}; starting counters at 0")
+
+    # Start the training process
+    results = train(
+        model_engine,
+        train_dataloader,
+        eval_dataloader,
+        tokenizer,
+        train_config.gradient_accumulation_steps,
+        train_config,
+        log_config,
+        local_rank,
+        rank,
+        resume_step=resume_step,
+        resume_epoch=resume_epoch,
+    )
+    if rank==0:
+        [logger.info(f'Key: {k}, Value: {v}') for k, v in results.items()]
+
+    if rank == 0:
+        if log_config.use_wandb:
+            wandb.finish()
