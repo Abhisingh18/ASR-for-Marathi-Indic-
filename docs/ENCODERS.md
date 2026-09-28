@@ -13,3 +13,9 @@ LoRA adapters receive gradients. This isolates each encoder's out-of-the-box rep
 quality for Marathi+English speech.
 
 ## Why this comparison matters
+
+Marathi fine-tuning gives a real, measurable edge (see `results/SUMMARY.md`): both
+Marathi-fine-tuned encoders (data2vec-AQC FT, ccc-wav2vec2 FT) outperform every pretrained-only
+encoder on every complete test set. Among the pretrained-only encoders, Whisper (680k+ hours,
+many of them likely Indian-language) edges out XEUS and the SSL-only data2vec-AQC variant on
+most sets.
