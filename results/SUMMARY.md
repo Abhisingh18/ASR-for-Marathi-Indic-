@@ -18,3 +18,16 @@ same LoRA recipe, only the frozen speech encoder (and, for one row, the LLM) dif
 | mucs             | 29.24 | 27.96 | 43.62 | 34.82 | **26.99** | 35.28 |
 
 **Bold** = best (lowest WER) for that test set.
+
+## R12 (largest testset, 6,282 utterances) — preliminary, decode still running
+
+As of 2026-09-28 22:37 IST, R12 decoding had reached (rows scored / total):
+
+| Model | Rows scored |
+|---|---|
+| data2vec-FT+Gemma3 | 3,738 / 6,282 |
+| ccc-wav2vec2+Gemma3 | 2,607 / 6,282 |
+| Sarvam-1+FT | 5,950 / 6,282 |
+| data2vec-SSL+Gemma3 | 3,252 / 6,282 |
+| Whisper+Gemma3 | 2,314 / 6,282 |
+| XEUS+Gemma3 | 2,978 / 6,282 |
