@@ -56,3 +56,16 @@ testsets=(
     mucs_marathi_test
     R12_marathi_eval_filtered
 )
+
+for split in "${testsets[@]}"; do
+    echo "========================================================"
+    echo "Decoding: $split"
+    echo "========================================================"
+
+    val_data_path=$test_dir/${split}_output_prev.local.jsonl
+    decode_log=$decode_dir/decode_${split}
+
+    if [ ! -f "$val_data_path" ]; then
+        echo "[FATAL] $val_data_path not found -- run rewrite_marathi_testset_paths.py first" >&2
+        continue
+    fi
