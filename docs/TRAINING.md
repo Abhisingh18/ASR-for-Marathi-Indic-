@@ -17,3 +17,9 @@ for the Sarvam-1 run, the LLM, differ between scripts.
 | GPUs | 4x NVIDIA RTX 6000 Ada (49GB), `CUDA_DEVICE_ORDER=PCI_BUS_ID` |
 
 ## Resume support
+
+`src_patches/finetune_deepspeed_new.py` includes a fix so that resuming from a checkpoint restores
+the **full DeepSpeed engine state** -- optimizer moments, LR-scheduler position, global step count
+-- not just the model weights. Without this, a resumed run silently re-warms the LR from 0 and
+restarts Adam from scratch, which would make resumed runs incomparable to runs that never crashed.
+See `docs/RESUME.md` for the mechanism.
