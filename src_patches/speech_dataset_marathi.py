@@ -368,3 +368,76 @@ class SpeechDatasetJsonl(torch.utils.data.Dataset):
         assert samples is not None 
         input_prompt_lengths = [s["audio_length"] + s['prompt_length'] for s in samples] #[120, 48, 82, 42]
         input_answer_lengths = [len(s["input_ids"]) - s["audio_length"] - s['prompt_length'] for s in samples]  #[0, 0, 0, 0]
+
+        input_prompt_max_length = max(input_prompt_lengths)
+        input_answer_max_length = max(input_answer_lengths)
+        
+        input_ids = torch.stack([
+            self.padding(
+                self.padding(samples[index]["input_ids"], input_prompt_max_length - input_prompt_lengths[index], self.tokenizer.pad_token_id, padding_side="left"),
+                input_answer_max_length - input_answer_lengths[index], self.tokenizer.pad_token_id
+            ) for index in range(len(samples))
+        ])
+
+        attention_mask = torch.stack([
+            self.padding(
+                self.padding(samples[index]["attention_mask"], input_prompt_max_length - input_prompt_lengths[index], False, padding_side="left"),
+                input_answer_max_length - input_answer_lengths[index], False
+            ) for index in range(len(samples))
+        ])
+
+
+        if self.input_type == "raw":
+            audio_raw_max_length = max([s['audio'].shape[0] for s in samples])
+            audio_raw = torch.stack([self.pad(s['audio'], audio_raw_max_length, 0)
+                                     for s in samples])
+            audio_mask = torch.zeros(len(samples), audio_raw_max_length)
+            for line, sample in enumerate(samples):
+                audio_mask[line, :sample['audio'].shape[0]] = 1
+        elif self.input_type == "mel":
+            audio_mel_max_length = max([s['audio_mel'].shape[0] for s in samples])
+            audio_mel = torch.stack([self.pad(s['audio_mel'], audio_mel_max_length, 0)
+                                  for s in samples])
+            audio_mel_post_mask = torch.zeros(len(samples), (audio_mel_max_length + 1) // 2) # ad-hoc for whisper for 2x downsample from mel to feats
+            for line, sample in enumerate(samples):
+                audio_mel_post_mask[line, :(sample['audio_mel'].shape[0] + 1) // 2] = 1
+    
+        modality_mask = torch.zeros_like(attention_mask)
+        for index in range(len(samples)):
+            padding_left = input_prompt_max_length - input_prompt_lengths[index]
+            modality_mask[index, padding_left:padding_left+samples[index]["audio_length"]] = True
+
+        if self.inference_mode:
+            keys = [s['key'] for s in samples]
+            targets = [s['target'] for s in samples]
+
+            return {
+                "input_ids": input_ids,
+                "attention_mask": attention_mask,
+                "audio": audio_raw if self.input_type == "raw" else None,
+                "audio_mask": audio_mask if self.input_type == "raw" else None,
+                "audio_mel": audio_mel if self.input_type == "mel" else None,
+                "audio_mel_post_mask": audio_mel_post_mask if self.input_type == "mel" else None,
+                "modality_mask": modality_mask,
+                "keys": keys,
+                "targets": targets
+            }
+
+        labels = torch.stack([
+            self.padding(
+                self.padding(samples[index]['labels'], input_prompt_max_length - input_prompt_lengths[index], self.IGNORE_INDEX, padding_side="left"),
+                input_answer_max_length - input_answer_lengths[index], self.IGNORE_INDEX)
+            for index in range(len(samples))
+        ])
+        
+        return {
+            "input_ids": input_ids,
+            "labels": labels,
+            "attention_mask": attention_mask,
+            "audio": audio_raw if self.input_type == "raw" else None,
+            "audio_mask": audio_mask if self.input_type == "raw" else None,
+            "audio_mel": audio_mel if self.input_type == "mel" else None,
+            "audio_mel_post_mask": audio_mel_post_mask if self.input_type == "mel" else None,
+            "modality_mask": modality_mask
+        }
+
