@@ -58,3 +58,42 @@ flowchart LR
 Details: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 
 ## 🧩 Models compared
+
+| # | Encoder | LLM | Marathi fine-tuned encoder? | Card |
+|---|---|---|:---:|---|
+| 1 | data2vec-AQC | Gemma-3-4B-IT | ✅ | [`results/data2vec-FT_Gemma3`](results/data2vec-FT_Gemma3/README.md) |
+| 2 | ccc-wav2vec2.0 | Gemma-3-4B-IT | ✅ | [`results/ccc-wav2vec2-FT_Gemma3`](results/ccc-wav2vec2-FT_Gemma3/README.md) |
+| 3 | data2vec-AQC | Sarvam-1 | ✅ | [`results/data2vec-FT_Sarvam1`](results/data2vec-FT_Sarvam1/README.md) |
+| 4 | data2vec-AQC (SSL) | Gemma-3-4B-IT | ❌ | [`results/data2vec-SSL_Gemma3`](results/data2vec-SSL_Gemma3/README.md) |
+| 5 | Whisper large-v3 | Gemma-3-4B-IT | ❌ | [`results/Whisper_Gemma3`](results/Whisper_Gemma3/README.md) |
+| 6 | XEUS | Gemma-3-4B-IT | ❌ | [`results/XEUS_Gemma3`](results/XEUS_Gemma3/README.md) |
+
+Full encoder specs: [`docs/ENCODERS.md`](docs/ENCODERS.md)
+
+## 📊 Results
+
+**WER% on 6 complete test sets** (checkpoint: epoch 1 / step 32,000 for every model — controlled comparison):
+
+| Test set | data2vec-FT+Gemma3 | ccc-wav2vec2+Gemma3 | Sarvam-1+FT | data2vec-SSL+Gemma3 | Whisper+Gemma3 | XEUS+Gemma3 |
+|---|---|---|---|---|---|---|
+| commonvoice | **22.49** | 24.16 | 23.53 | 25.23 | 29.27 | 35.80 |
+| fleurs | **23.88** | 26.57 | 26.77 | 26.57 | 29.57 | 30.43 |
+| indictts | **16.15** | 18.26 | 17.26 | 19.27 | 18.97 | 21.90 |
+| kathbath | **21.29** | 23.74 | 22.73 | 25.04 | 26.99 | 31.96 |
+| kathbath_noisy | **22.14** | 23.97 | 23.22 | 27.25 | 28.94 | 33.38 |
+| mucs | 29.24 | 27.96 | 43.62 | 34.82 | **26.99** | 35.28 |
+
+**Bold = best (lowest WER)**. A 7th, larger test set (R12, 6,282 utterances) is still decoding —
+see [`results/SUMMARY.md`](results/SUMMARY.md) for its preliminary numbers and full takeaways.
+
+## 📁 Repository layout
+
+```
+├── scripts/
+│   ├── training/     6 training scripts (one per encoder/LLM combo)
+│   └── decoding/     6 decode scripts + WER scorer + path-rewrite helper
+├── src_patches/      2 small patches on top of the SLAM-LLM framework
+├── results/          per-model WER files, config snapshot, and README card
+├── docs/             architecture, encoders, dataset, training, decoding, resume-fix write-ups
+└── CHANGELOG.md
+```
