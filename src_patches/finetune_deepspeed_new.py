@@ -307,3 +307,6 @@ def main(kwargs: DictConfig):
     if rank == 0:
         if log_config.use_wandb:
             wandb.finish()
+
+if __name__ == "__main__":
+    main_hydra()
