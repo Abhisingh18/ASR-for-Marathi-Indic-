@@ -14,3 +14,7 @@ state. Two things are restored on resume, both necessary:
 The dataloader is also fast-forwarded past already-completed batches (`resume_step`/`resume_epoch`,
 parsed from the checkpoint directory name `asr_epoch_<E>_step_<S>`), so the same batch order
 resumes from where it left off rather than restarting the epoch.
+
+A checkpoint only counts as resumable if it has `pytorch_model.bin`, a `latest` file, and one
+optimizer shard per GPU used in the original run -- partial checkpoints from a crash mid-save are
+skipped automatically.
