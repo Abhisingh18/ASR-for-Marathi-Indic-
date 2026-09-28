@@ -122,3 +122,97 @@ def main(kwargs: DictConfig):
     rank = int(os.environ["RANK"])
     world_size = int(os.environ["WORLD_SIZE"])
     logger.info(f"local_rank: {local_rank}, rank: {rank}, world_size: {world_size}")
+
+    torch.cuda.set_device(local_rank)
+    clear_gpu_cache(local_rank)
+    setup_environ_flags(rank)
+
+    if rank == 0:
+        logger.info("train_config: {}".format(train_config))
+        logger.info("model_config: {}".format(model_config))
+        logger.info("log_config: {}".format(log_config))
+
+    # Set wandb
+    if rank == 0:
+        if log_config.use_wandb:
+            if not os.path.exists(log_config.wandb_dir):
+                os.makedirs(log_config.wandb_dir, exist_ok=True)
+            wandb_config={"train_config": train_config, "model_config": model_config, "log_config": log_config}
+            # Resume onto the SAME wandb run (one continuous graph) across
+            # relaunches: persist the run id next to the checkpoints on first
+            # launch, and reuse it (id=..., resume="allow") on every later
+            # launch in this output_dir instead of always starting a fresh run.
+            wandb_run_id_path = os.path.join(train_config.output_dir, "wandb_run_id.txt")
+            prior_run_id = None
+            if os.path.exists(wandb_run_id_path):
+                with open(wandb_run_id_path) as f:
+                    prior_run_id = f.read().strip() or None
+                if prior_run_id:
+                    logger.info(f"[wandb] resuming run id={prior_run_id}")
+            # Don't pass config= directly when resuming -- wandb rejects any
+            # value that differs from the original run's stored config (e.g.
+            # a newly-added dataset_config field like encoder_frame_offset)
+            # unless allow_val_change=True, which config= at init time doesn't
+            # support. Set it after init via config.update() instead.
+            wandb.init(dir=log_config.wandb_dir, entity=log_config.wandb_entity_name, project=log_config.wandb_project_name,name=log_config.wandb_exp_name, id=prior_run_id, resume="allow")
+            wandb.config.update(wandb_config, allow_val_change=True)
+            os.makedirs(train_config.output_dir, exist_ok=True)
+            with open(wandb_run_id_path, "w") as f:
+                f.write(wandb.run.id)
+
+
+    model_factory = get_custom_model_factory(model_config, logger)
+    model, tokenizer = model_factory(train_config, model_config, **kwargs)
+    parameters = filter(lambda p: p.requires_grad, model.parameters())
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    # If you are facing problem from limited memory(<=256GB), you can try to replace the above code with the following code
+    # for i in range(rank):
+    #     while not os.path.isfile(f".{i}.done"):
+    #         pass
+    # assert not os.path.isfile(f".{rank}.done"), f".{rank}.done already exists!"
+    # model_factory = get_custom_model_factory(model_config, logger)
+    # model, tokenizer = model_factory(train_config, model_config, **kwargs)
+    # parameters = filter(lambda p: p.requires_grad, model.parameters())
+    # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # model.half()
+    # with open(f".{rank}.done", "w"):
+    #     pass
+
+
+    # Initialize the optimizer and learning rate scheduler
+    model_engine, _, _, _ = deepspeed.initialize(
+        model=model, model_parameters=parameters, config=deepspeed_config
+    )
+
+    # Resume support: also restore the DeepSpeed engine state (AdamW moments,
+    # WarmupLR scheduler position, global_steps) from train_config.resume_ckpt.
+    # ckpt_path alone only restores the LoRA+projector weights, so without this
+    # a resumed run re-warms the LR from 0 and restarts Adam from scratch.
+    # Checkpoints are saved with exclude_frozen_parameters=True, hence
+    # load_module_strict=False (the frozen encoder/LLM weights are not in them).
+    _resume_dir = getattr(train_config, "resume_ckpt", None)
+    if _resume_dir and os.path.isfile(os.path.join(_resume_dir, "latest")):
+        load_path, _ = model_engine.load_checkpoint(
+            _resume_dir,
+            load_module_strict=False,
+            load_optimizer_states=True,
+            load_lr_scheduler_states=True,
+        )
+        if load_path is None:
+            raise RuntimeError(f"[resume] DeepSpeed load_checkpoint failed for {_resume_dir}")
+        if rank == 0:
+            logger.info(f"[resume] restored DeepSpeed engine state from {load_path}: global_steps={model_engine.global_steps}, lr={model_engine.get_lr()}")
+
+    
+    # Convert the model to bfloat16 if fsdp and pure_bf16 is enabled
+    # if (train_config.enable_fsdp or train_config.enable_ddp) and fsdp_config.pure_bf16:
+    #     model.to(torch.bfloat16)
+
+    #setting up FSDP if enable_fsdp is enabled
+    # if train_config.enable_ddp:
+    #     model = model.cuda(local_rank)
+    #     model = DDP(model, device_ids=[local_rank],
+    #                 find_unused_parameters=kwargs.get("train_conf", {}).get("find_unused_parameters", False))
+    # elif not train_config.quantization:
+    #     model.to(device)
