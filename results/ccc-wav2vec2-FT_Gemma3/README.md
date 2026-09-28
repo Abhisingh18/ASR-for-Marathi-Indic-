@@ -8,3 +8,15 @@
 | Decode script | [`inference_ccc_wav2vec2_gemma3_marathi_7testsets.sh`](../../scripts/decoding/inference_ccc_wav2vec2_gemma3_marathi_7testsets.sh) |
 | Checkpoint evaluated | epoch 1, step 32,000 |
 | Effective batch | 32 (micro-batch 4 x 4 GPUs x grad-accum 2) |
+
+## WER%
+
+| Test set | WER% |
+|---|---|
+| commonvoice | 24.16 |
+| fleurs | 26.57 |
+| indictts | 18.26 |
+| kathbath | 23.74 |
+| kathbath_noisy | 23.97 |
+| mucs | 27.96 |
+| R12 (preliminary) | see [`../SUMMARY.md`](../SUMMARY.md) |
