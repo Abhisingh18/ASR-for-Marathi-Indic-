@@ -47,3 +47,36 @@ NUM_EPOCHS=${NUM_EPOCHS:-5}
 WANDB_ENTITY=${WANDB_ENTITY:-abhisingh964800-iit-madras-foundation}
 WANDB_PROJECT=${WANDB_PROJECT:-Marathi_English_Encoder_Comparison}
 WANDB_EXP_NAME=${WANDB_EXP_NAME:-whisper-large-v3-marathi-bilingual-cs-gemma3-4b-it-lora}
+
+# ---------------- environment (same flags as the Kannada Gemma-3 runs) ----------------
+export PYTHONPATH=$SLAM_DIR/src:$FAIRSEQ_DIR:$PYTHONPATH    # our tree MUST win over any editable slam_llm install
+export TOKENIZERS_PARALLELISM=false
+export OMP_NUM_THREADS=1
+export CUDA_DEVICE_ORDER=PCI_BUS_ID
+export PYTHONNOUSERSITE=1
+export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
+export CUDA_HOME=${CUDA_HOME:-/usr/local/cuda-12.4}
+[ -x "$ENV_BIN/python" ] && export PATH=$ENV_BIN:$PATH
+export PATH=$CUDA_HOME/bin:$PATH
+export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+export DS_SKIP_CUDA_CHECK=1
+export HYDRA_FULL_ERROR=1
+export NCCL_P2P_DISABLE=${NCCL_P2P_DISABLE:-1}
+export NCCL_IB_DISABLE=${NCCL_IB_DISABLE:-1}
+export NCCL_DEBUG=WARN
+# stability mitigations used for every Gemma run on the RTX 6000 Ada boxes (no TF32, deterministic cuBLAS)
+export NVIDIA_TF32_OVERRIDE=0
+export CUBLAS_WORKSPACE_CONFIG=:4096:8
+export TORCH_NCCL_ASYNC_ERROR_HANDLING=1
+export NCCL_TIMEOUT=1800
+
+# ---------------- effective batch = 4 x n_gpus x grad_accum = 32 ----------------
+n_gpus=$(echo "$GPU_INCLUDE" | awk -F, '{print NF}')
+if [ $((8 % n_gpus)) -ne 0 ]; then
+    echo "[FATAL] n_gpus=$n_gpus does not divide 8; use 1, 2, 4 or 8 GPUs to keep effective batch 32" >&2
+    exit 1
+fi
+grad_accum=$((8 / n_gpus))
+
+cd "$SLAM_DIR"
+code_dir=examples/asr_librispeech
