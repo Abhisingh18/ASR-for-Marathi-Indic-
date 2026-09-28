@@ -167,3 +167,108 @@ class SpeechDatasetJsonl(torch.utils.data.Dataset):
         self.normalize = dataset_config.get("normalize", False)
         self.input_type = dataset_config.get("input_type", None)
         assert self.input_type in ["raw", "mel"], "input_type must be one of [raw, mel]" 
+
+        self.data_list = []
+        if split == "train":
+            with open(dataset_config.train_data_path, encoding='utf-8') as fin:
+                for line in fin:
+                    data_dict = json.loads(line.strip())
+                    self.data_list.append(data_dict)
+        else:
+            with open(dataset_config.val_data_path, encoding='utf-8') as fin:
+                for line in fin:
+                    data_dict = json.loads(line.strip())
+                    self.data_list.append(data_dict)
+
+        # # debug
+        # with open(dataset_config.train_data_path, encoding='utf-8') as fin:
+        #         for line in fin:
+        #             data_dict = json.loads(line.strip())
+        #             self.data_list.append(data_dict)
+        # if split == "train":
+        #     self.data_list = self.data_list[:80]
+        # else:
+        #     self.data_list = self.data_list[80:100]
+
+    def get_source_len(self, data_dict):
+        return data_dict["source_len"]
+
+    def get_target_len(self, data_dict):
+    
+        return data_dict["target_len"] if "target_len" in data_dict else 0
+    
+    def __len__(self):
+        return len(self.data_list)
+    
+    def __getitem__(self, index):
+        data_dict = self.data_list[index]
+        audio_path = data_dict.get("source")
+        target = data_dict.get("target", None)
+        task = data_dict.get("prompt", "ASR")
+        key = data_dict.get("key", None)
+
+        if _whisper_mod is not None:
+            audio_raw = _whisper_mod.load_audio(audio_path)
+        else:
+            # fallback when openai-whisper is not installed (e.g. triton conflict)
+            import soundfile as _sf, numpy as _np
+            _audio, _sr = _sf.read(audio_path, dtype='float32', always_2d=False)
+            if _audio.ndim > 1:
+                _audio = _audio.mean(axis=1)
+            if _sr != 16000:
+                import torchaudio.functional as _F_ta
+                _audio = _F_ta.resample(torch.from_numpy(_audio), _sr, 16000).numpy()
+            audio_raw = _audio
+        if self.input_type == "raw":
+            audio_raw = torch.from_numpy(audio_raw)
+            if self.normalize:
+                audio_raw = torch.nn.functional.layer_norm(audio_raw, audio_raw.shape)
+            if self.audio_frames_per_sec > 0:
+                # duration-based frame budget: keep only the leftmost
+                # round(fps * sec) encoder frames (e.g. fps=15 of the 50/s)
+                seconds = len(audio_raw) / 16000.0
+                budget_frames = int(round(self.audio_frames_per_sec * seconds))
+                audio_length = max(1, budget_frames // self.encoder_projector_ds_rate)
+            else:
+                audio_length = len(audio_raw) // 320 # ad-hoc for fairseq 320x downsample
+                audio_length = max(0, audio_length - self.encoder_frame_offset)
+                audio_length = audio_length // self.encoder_projector_ds_rate # fc downsample (historically 5)
+        elif self.input_type == "mel":
+            if _whisper_mod is None:
+                raise ImportError(
+                    'openai-whisper is required for input_type=mel. '
+                    'Install it manually (note: incompatible with torch>=2.4+cu12x).')
+            audio_raw = _whisper_mod.pad_or_trim(audio_raw)
+            # audio_raw = np.concatenate((np.zeros(random.randint(0, 16000)), audio_raw, np.zeros(random.randint(0, 16000)))).astype(audio_raw.dtype)[:16000*30]
+            audio_mel = _whisper_mod.log_mel_spectrogram(audio_raw, n_mels=self.mel_size).permute(1, 0)
+            audio_length = (audio_mel.shape[0] + 1) // 2  # ad-hoc for whisper for 2x downsample from mel to feats
+            audio_length = audio_length // 5 # ad-hoc for 5x fc downsample
+            # audio_length = calculate_output_length_1d(audio_length, 5, 5, 0) # ad-hoc for 5x cov1d downsample
+        if self.fix_length_audio > 0:
+            audio_length = self.fix_length_audio
+        audio_pseudo = torch.full((audio_length,), -1) # placeholder
+
+        prompt = self.prompt
+        if prompt is None:
+            # prompt = random.choice(self.prompt_library)
+            # prompt = "Transcribe speech to text. "
+            prompt = "Transcribe speech to text. Output the transcription directly without redundant content. Ensure that the output is not duplicated. "
+        # MaLa-ASR historical context: ALL utterances use the same prompt; fill its
+        # {prev_context} slot with this sample's prev_context (empty string when the
+        # sample has no prior context). .replace (not .format) so stray braces in the
+        # context text can't break substitution; a no-op when there's no placeholder.
+        if self.use_history_context:
+            prev_context = data_dict.get("prev_context", "")
+            prompt = prompt.replace("{prev_context}", prev_context)
+        if "{lang}" in prompt or "{lang_note}" in prompt:
+            lang_code = data_dict.get("language", data_dict.get("lang", ""))
+            prompt = prompt.replace("{lang}", _lang_display(lang_code))
+            prompt = prompt.replace("{lang_note}", _lang_note(lang_code))
+        prompt = self.prompt_template.format(prompt)
+        prompt_ids = self.tokenizer.encode(prompt)
+        prompt_length = len(prompt_ids)
+
+        if self.inference_mode:
+            prompt_ids = torch.tensor(prompt_ids, dtype=torch.int64)
+            example_ids = torch.cat((audio_pseudo, prompt_ids))  # [audio,prompt]
+            example_mask = example_ids.ge(-1)  # [True,True]
