@@ -31,3 +31,18 @@ As of 2026-09-28 22:37 IST, R12 decoding had reached (rows scored / total):
 | data2vec-SSL+Gemma3 | 3,252 / 6,282 |
 | Whisper+Gemma3 | 2,314 / 6,282 |
 | XEUS+Gemma3 | 2,978 / 6,282 |
+
+The `wer_R12_marathi_eval_filtered` files in each model's results folder reflect this partial
+state and will be overwritten with the final score once decoding completes.
+
+## Takeaways
+
+- **`data2vec-FT + Gemma-3-4B`** (Marathi fine-tuned data2vec-AQC encoder) wins on 5 of 6 complete
+  test sets — expected, since its encoder was fine-tuned on in-domain Marathi CTC data before
+  this SLAM-ASR stage even began.
+- **`ccc-wav2vec2 + Gemma-3-4B`** and **`data2vec-FT + Sarvam-1`** are close runners-up, both
+  within ~1-2 WER points of the best on most test sets.
+- **`XEUS + Gemma-3-4B`** (pretrained-only, no Marathi fine-tuning) is consistently the weakest —
+  it has never seen labeled Marathi audio before this stage, unlike the other encoders.
+- Swapping the LLM (Sarvam-1 vs Gemma-3-4B, same data2vec-FT encoder) matters less than swapping
+  the encoder, except on `mucs`, where Sarvam-1 falls far behind (43.62 vs 29.24).
