@@ -20,3 +20,8 @@
 | kathbath_noisy | 33.38 |
 | mucs | 35.28 |
 | R12 (preliminary) | see [`../SUMMARY.md`](../SUMMARY.md) |
+
+Weakest encoder in this comparison: pretrained-only, never fine-tuned on Marathi (or any
+CTC-labeled) audio before this SLAM-ASR stage. ~1.5% of its parameters (a positional-embedding
+conv submodule) also load randomly-initialized due to a config-schema mismatch — see the loader
+notes in `slam_llm/models/xeus_encoder.py` (not included in this repo).
