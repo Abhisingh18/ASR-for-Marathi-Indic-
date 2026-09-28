@@ -20,3 +20,7 @@
 | kathbath_noisy | 23.22 |
 | mucs | 43.62 |
 | R12 (preliminary) | see [`../SUMMARY.md`](../SUMMARY.md) |
+
+Same encoder as the top-performing Gemma-3 row, swapping only the LLM — isolates how much the
+downstream LLM choice matters versus the encoder. Competitive on most sets, but falls sharply
+behind on `mucs`.
