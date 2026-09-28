@@ -21,3 +21,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ---
+
+This project's training/decoding scripts build on SLAM-LLM (github.com/ddlBoJack/SLAM-LLM),
+also MIT licensed, Copyright (c) 2024 Ziyang Ma. The framework itself is not vendored into
+this repository -- see docs/ACKNOWLEDGEMENTS.md for the full list of upstream/collaborator
+credits (SLAM-LLM framework, SPRING-INX encoder checkpoints, colleague contributions).
