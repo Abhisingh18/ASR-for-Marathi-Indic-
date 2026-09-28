@@ -33,3 +33,12 @@ export HYDRA_FULL_ERROR=1
 run_dir=/speech/abhishek/SLAM-LLM
 cd $run_dir
 code_dir=examples/asr_librispeech
+
+speech_encoder_path=/speech/abhishek/kannada_data/encoders/whisper/large-v3.pt
+llm_path=/speech/abhishek/SLAM_Hindi/models/google/gemma-3-4b-it
+
+output_dir=/speech/abhishek/output/marathi-cs-whisper-gemma3-4b-finetuned
+ckpt_dir=${CKPT_DIR:-$output_dir/asr_epoch_1_step_32000}
+
+decode_dir=$output_dir/decode_results_$(basename $ckpt_dir)_7testsets
+mkdir -p $decode_dir
