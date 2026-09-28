@@ -136,3 +136,41 @@ if [ "$USE_WANDB" = "auto" ]; then
 else
     echo "[wandb] USE_WANDB=$USE_WANDB (forced)  WANDB_MODE=${WANDB_MODE:-online}"
 fi
+
+# ---------------- DeepSpeed config: the Gemma-3 bilingual one, only grad-accum changed ----------------
+mkdir -p "$OUTPUT_DIR"
+ds_config_path=$OUTPUT_DIR/ds_config_marathi.json
+python - <<EOF
+import json
+cfg = json.load(open("$SLAM_DIR/$code_dir/conf/ds_config_gemma3_bilingual.json"))
+cfg["gradient_accumulation_steps"] = $grad_accum
+json.dump(cfg, open("$ds_config_path", "w"), indent=2)
+EOF
+echo "[cfg] n_gpus=$n_gpus micro-batch=4 grad_accum=$grad_accum -> effective batch $((4 * n_gpus * grad_accum))   ds_config=$ds_config_path"
+
+# ---------------- auto-resume ----------------
+# A checkpoint is complete only if it has pytorch_model.bin, `latest` and one optimizer shard per GPU.
+resume_ckpt=""
+if [ "${RESUME_CKPT:-}" = "none" ]; then
+    resume_ckpt=""
+elif [ -n "${RESUME_CKPT:-}" ]; then
+    resume_ckpt="$RESUME_CKPT"
+else
+    for d in $(ls -dt "$OUTPUT_DIR"/asr_epoch_*_step_* 2>/dev/null); do
+        if [ -f "$d/pytorch_model.bin" ] && [ -f "$d/latest" ]; then
+            gstep_dir="$d/$(cat "$d/latest" 2>/dev/null)"
+            n_optim=$(ls "$gstep_dir"/bf16_zero_pp_rank_*_mp_rank_00_optim_states.pt 2>/dev/null | wc -l)
+            if [ "$n_optim" -eq "$n_gpus" ]; then resume_ckpt="$d"; break; fi
+        fi
+    done
+fi
+resume_arg=""
+if [ -n "$resume_ckpt" ]; then
+    echo "[resume] resuming from: $resume_ckpt"
+    # BOTH are needed: ckpt_path restores the weights, resume_ckpt fast-forwards the dataloader.
+    resume_arg="++ckpt_path=$resume_ckpt/pytorch_model.bin ++train_config.resume_ckpt=$resume_ckpt"
+else
+    echo "[resume] no complete checkpoint -> fresh run in $OUTPUT_DIR"
+fi
+
+lora_targets=[q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj]
