@@ -1,0 +1,2548 @@
+blindtest_002487(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लेमन स्लश माझ्यासाठी घेशील
+hyp:	lemon rush माझ्यासाठी घेशील
+diff:	(लेमन स्लश->lemon rush) माझ्यासाठी घेशील
+blindtest_003223(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	नंतर जोरात पाऊस सुरू झाला
+hyp:	नंतर जोरात पाऊस सुरू झाला
+diff:	नंतर जोरात पाऊस सुरू झाला
+blindtest_004310(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	बघूया तू बरोबर सांगतेस का
+hyp:	बघूया तू बरोबर सांगतेस का
+diff:	बघूया तू बरोबर सांगतेस का
+blindtest_006389(nwords=6,cor=4,ins=0,del=0,sub=2) corr:66.67%,cer:33.33%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	महाशिवरात्री उत्सव कोइंबत्तूर शहरात साजरा करतात
+diff:	महाशिवरात्री (महोत्सव कोइंबतूर->उत्सव कोइंबत्तूर) शहरात साजरा करतात
+blindtest_006654(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	गोदावरी मेसेजेस पाठव
+hyp:	गोदावरी messages पाठव
+diff:	गोदावरी (मेसेजेस->messages) पाठव
+blindtest_008097(nwords=10,cor=8,ins=1,del=0,sub=2) corr:80.00%,cer:30.00%
+ref:	मला सांगा ड्रोन म्हणजे काय मला सांगा ड्रोन म्हणजे काय
+hyp:	मला सांगा drone म्हणजे काय काय मला सांगा drone म्हणजे काय
+diff:	मला सांगा (ड्रोन->drone) म्हणजे (*->काय) काय मला सांगा (ड्रोन->drone) म्हणजे काय
+blindtest_016948(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	टीवीएस टायर्स चांगला धावते
+hyp:	tvs टायर्स चांगला धावते
+diff:	(टीवीएस->tvs) टायर्स चांगला धावते
+blindtest_017419(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	megha urgent email print कर
+diff:	(मेघा अर्जंट ईमेल प्रिंट->megha urgent email print) कर
+blindtest_021501(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	ब्रेकिंग न्यूज ब्लॉक करावा
+hyp:	breaking news block करावा
+diff:	(ब्रेकिंग न्यूज ब्लॉक->breaking news block) करावा
+blindtest_022202(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता मी तुला पकडतो
+hyp:	आता मी तुला पकडतो
+diff:	आता मी तुला पकडतो
+blindtest_026012(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	आजचा प्रोफाईल चांगला आहे
+hyp:	आदचा profile चांगला आहे
+diff:	(आजचा प्रोफाईल->आदचा profile) चांगला आहे
+blindtest_026066(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी बरोडा जाते
+diff:	(रेल्वेगाडी->railway गाडी) बरोडा जाते
+blindtest_027783(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता तू मला पैसे दिले पाहिजेत
+hyp:	आता तू मला पैसे दिले पाहिजेत
+diff:	आता तू मला पैसे दिले पाहिजेत
+blindtest_033510(nwords=6,cor=3,ins=0,del=1,sub=2) corr:50.00%,cer:50.00%
+ref:	राम वारांगल इंस्टीट्यूट मध्ये शिक्षक आहे
+hyp:	रामवारांगळ institute मध्ये शिक्षक आहे
+diff:	(राम वारांगल इंस्टीट्यूट->रामवारांगळ institute) मध्ये शिक्षक आहे
+blindtest_035164(nwords=5,cor=2,ins=2,del=0,sub=3) corr:40.00%,cer:100.00%
+ref:	जनशताब्दी तंजावूर जाणारी रेल्वेगाडी आहे
+hyp:	जन शताब्दी तंजापूर जाणारी railway गाडी आहे
+diff:	(जनशताब्दी तंजावूर->जन शताब्दी तंजापूर) जाणारी (रेल्वेगाडी->railway गाडी) आहे
+blindtest_035328(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	ऑडी चा इमेज दाखवा
+hyp:	audit चा image दाखवा
+diff:	(ऑडी->audit) चा (इमेज->image) दाखवा
+blindtest_036147(nwords=8,cor=2,ins=0,del=1,sub=5) corr:25.00%,cer:75.00%
+ref:	सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन करायची आहे
+hyp:	सोनेवाडीला garment industrial company open करायची आहे
+diff:	(सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन->सोनेवाडीला garment industrial company open) करायची आहे
+blindtest_036562(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता खेळायची वेळ झाली
+hyp:	आता खेळायची वेळ झाली
+diff:	आता खेळायची वेळ झाली
+blindtest_037187(nwords=6,cor=3,ins=0,del=1,sub=2) corr:50.00%,cer:50.00%
+ref:	राम वारांगल इंस्टीट्यूट मध्ये शिक्षक आहे
+hyp:	रामवारांगळ institute मध्ये शिक्षक आहे
+diff:	(राम वारांगल इंस्टीट्यूट->रामवारांगळ institute) मध्ये शिक्षक आहे
+blindtest_037935(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst solutions logistics market करतात
+diff:	(सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट->cst solutions logistics market) करतात
+blindtest_039644(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_044277(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	ब्रेकिंग न्यूज ब्लॉक करावा
+hyp:	breaking news block करावा
+diff:	(ब्रेकिंग न्यूज ब्लॉक->breaking news block) करावा
+blindtest_044540(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	अजून शाळेला वेळ आहे
+hyp:	अजून शाळेला वेळ आहे
+diff:	अजून शाळेला वेळ आहे
+blindtest_044746(nwords=6,cor=4,ins=0,del=0,sub=2) corr:66.67%,cer:33.33%
+ref:	आठशे इंडियन कम्प्युटर वर वायरस आहे
+hyp:	आठशे indian computer वर वायरस आहे
+diff:	आठशे (इंडियन कम्प्युटर->indian computer) वर वायरस आहे
+blindtest_047133(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता मी तुला पकडतो
+hyp:	आता मी तुला पकडतो
+diff:	आता मी तुला पकडतो
+blindtest_048034(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	आता मला अंघोळ करायची आहे
+hyp:	आता मला आंघोळ करायची आहे
+diff:	आता मला (अंघोळ->आंघोळ) करायची आहे
+blindtest_048157(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	इथून पुढे शहर सुरू होतं
+hyp:	इथून पुढे शहर सुरू होतं
+diff:	इथून पुढे शहर सुरू होतं
+blindtest_048864(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_049033(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	मला एक आयडिया सुचली आहे
+hyp:	मला एक idea सुचली आहे
+diff:	मला एक (आयडिया->idea) सुचली आहे
+blindtest_054005(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	काही कार मध्ये
+hyp:	काही car मध्ये
+diff:	काही (कार->car) मध्ये
+blindtest_058121(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_059359(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_061319(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आणि तुला एक दोन तीन
+hyp:	आणि तुला एक दोन तीन
+diff:	आणि तुला एक दोन तीन
+blindtest_062858(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता हिरव्या खुश आहे
+hyp:	आता हिरव्या खुश आहे
+diff:	आता हिरव्या खुश आहे
+blindtest_069077(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_069712(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	ऑडी चा इमेज दाखवा
+hyp:	ऑडीचा image दाखवा
+diff:	(ऑडी चा इमेज->ऑडीचा image) दाखवा
+blindtest_073829(nwords=3,cor=1,ins=1,del=0,sub=2) corr:33.33%,cer:100.00%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी भरवडा जाते
+diff:	(रेल्वेगाडी बरोडा->railway गाडी भरवडा) जाते
+blindtest_074964(nwords=6,cor=3,ins=0,del=1,sub=2) corr:50.00%,cer:50.00%
+ref:	राम वारांगल इंस्टीट्यूट मध्ये शिक्षक आहे
+hyp:	रामवारांगेल institute मध्ये शिक्षक आहे
+diff:	(राम वारांगल इंस्टीट्यूट->रामवारांगेल institute) मध्ये शिक्षक आहे
+blindtest_078423(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	क्लाउड वर डेटा अपलोड करायचा
+hyp:	cloud वर data upload करायचा
+diff:	(क्लाउड->cloud) वर (डेटा अपलोड->data upload) करायचा
+blindtest_079008(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+diff:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+blindtest_082842(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पुजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम (पूजा->पुजा) सांगशील
+blindtest_083631(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	sainagar शिर्डी मध्ये आहे
+diff:	(साईनगर->sainagar) शिर्डी मध्ये आहे
+blindtest_085522(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे काल निर्णय घेऊ
+diff:	इकडे (कालनिर्णय->काल निर्णय) घेऊ
+blindtest_087445(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_090063(nwords=10,cor=9,ins=0,del=0,sub=1) corr:90.00%,cer:10.00%
+ref:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+hyp:	मंजूर दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+diff:	(म्हणजेच->मंजूर) दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+blindtest_091022(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	देशपांडे चर्चगेट ला उतरला
+hyp:	देशपांडे church gate ला उतरला
+diff:	देशपांडे (चर्चगेट->church gate) ला उतरला
+blindtest_091767(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_092020(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_092267(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला आता गेले पाहिजे
+hyp:	मला आता गेले पाहिजे
+diff:	मला आता गेले पाहिजे
+blindtest_093966(nwords=9,cor=8,ins=0,del=0,sub=1) corr:88.89%,cer:11.11%
+ref:	माझं नाव आहे देवी आणि हे साल आहे इ
+hyp:	माझे नाव आहे देवी आणि हे साल आहे इ
+diff:	(माझं->माझे) नाव आहे देवी आणि हे साल आहे इ
+blindtest_096093(nwords=4,cor=1,ins=1,del=0,sub=3) corr:25.00%,cer:100.00%
+ref:	क्रेडिट कार्डची लिमिट दे
+hyp:	credit card ची limit दे
+diff:	(क्रेडिट कार्डची लिमिट->credit card ची limit) दे
+blindtest_096857(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_097772(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	desktop वर गाण्याची लायब्ररी आहे
+diff:	(डेस्कटॉप->desktop) वर गाण्याची (लायब्रेरी->लायब्ररी) आहे
+blindtest_097880(nwords=3,cor=2,ins=2,del=0,sub=1) corr:66.67%,cer:100.00%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे काल निर्णय नाही घेऊ
+diff:	इकडे (कालनिर्णय->काल निर्णय नाही) घेऊ
+blindtest_097904(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst solutions logistics market करतात
+diff:	(सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट->cst solutions logistics market) करतात
+blindtest_098907(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	लोकसत्ता वाचायला चांगलं आहे
+hyp:	लोकसत्ता वाचायला चांगलं आहे
+diff:	लोकसत्ता वाचायला चांगलं आहे
+blindtest_101204(nwords=8,cor=8,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+hyp:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+diff:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+blindtest_101863(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_105415(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	महाशिवरात्री महोत्सव कोइमतूर शहरात साजरा करतात
+diff:	महाशिवरात्री महोत्सव (कोइंबतूर->कोइमतूर) शहरात साजरा करतात
+blindtest_107593(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_108194(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आणि तुला एक दोन तीन
+hyp:	आणि तुला एक दोन तीन
+diff:	आणि तुला एक दोन तीन
+blindtest_110164(nwords=7,cor=3,ins=0,del=2,sub=2) corr:42.86%,cer:57.14%
+ref:	खंडोबाची रथ यात्रा आळंदी ला आलेली आहे
+hyp:	खंडोबाची रथयात्रा मांडलीला आलेली आहे
+diff:	खंडोबाची (रथ यात्रा आळंदी ला->रथयात्रा मांडलीला) आलेली आहे
+blindtest_110810(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_111717(nwords=8,cor=8,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+hyp:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+diff:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+blindtest_114540(nwords=6,cor=4,ins=0,del=0,sub=2) corr:66.67%,cer:33.33%
+ref:	राम वारांगल इंस्टीट्यूट मध्ये शिक्षक आहे
+hyp:	राम warangal institute मध्ये शिक्षक आहे
+diff:	राम (वारांगल इंस्टीट्यूट->warangal institute) मध्ये शिक्षक आहे
+blindtest_115031(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला लवकर घरी जायचे आहे
+hyp:	मला लवकर घरी जायचे आहे
+diff:	मला लवकर घरी जायचे आहे
+blindtest_115830(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	फ्रांस पहिल्यापासून फायबर्स तयार करतात
+hyp:	france पहिल्यापासून fiber तयार करतात
+diff:	(फ्रांस->france) पहिल्यापासून (फायबर्स->fiber) तयार करतात
+blindtest_117056(nwords=10,cor=8,ins=0,del=0,sub=2) corr:80.00%,cer:20.00%
+ref:	मला सांगा ड्रोन म्हणजे काय मला सांगा ड्रोन म्हणजे काय
+hyp:	मला सांगा drone म्हणजे काय मला सांगा drone म्हणजे काय
+diff:	मला सांगा (ड्रोन->drone) म्हणजे काय मला सांगा (ड्रोन->drone) म्हणजे काय
+blindtest_117516(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला आता गेले पाहिजे
+hyp:	मला आता गेले पाहिजे
+diff:	मला आता गेले पाहिजे
+blindtest_121016(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता हिरव्या खुश आहे
+hyp:	आता हिरव्या खुश आहे
+diff:	आता हिरव्या खुश आहे
+blindtest_121730(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	कोणतीही टूअर्स जाऊ
+hyp:	कोणतीही tours जाऊ नये
+diff:	कोणतीही (टूअर्स->tours) जाऊ (*->नये)
+blindtest_123007(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	पिझ्झा ची रेसिपी रिव्यू कर
+hyp:	pizza ची recipe review कर
+diff:	(पिझ्झा->pizza) ची (रेसिपी रिव्यू->recipe review) कर
+blindtest_125525(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	अजून शाळेला वेळ आहे
+hyp:	अजून शाळेला वेळ आहे
+diff:	अजून शाळेला वेळ आहे
+blindtest_126311(nwords=8,cor=8,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+hyp:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+diff:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+blindtest_128557(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	काही कार मध्ये
+hyp:	काही car मध्ये
+diff:	काही (कार->car) मध्ये
+blindtest_129060(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	क्लाउड वर डेटा अपलोड करायचा
+hyp:	cloud वर data upload करायचा
+diff:	(क्लाउड->cloud) वर (डेटा अपलोड->data upload) करायचा
+blindtest_129629(nwords=4,cor=0,ins=0,del=0,sub=4) corr:0.00%,cer:100.00%
+ref:	टीवीएस टायर्स चांगला धावते
+hyp:	tv star चांगलं दाखवते
+diff:	(टीवीएस टायर्स चांगला धावते->tv star चांगलं दाखवते)
+blindtest_130600(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	गोदावरी मेसेजेस पाठव
+hyp:	गोदावरी messages पाठव
+diff:	गोदावरी (मेसेजेस->messages) पाठव
+blindtest_133148(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	लोकसत्ता वाचायला चांगलं आहे
+hyp:	लोकसत्ता वाचायला चांगलं आहे
+diff:	लोकसत्ता वाचायला चांगलं आहे
+blindtest_138751(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_139764(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	लोकसत्ता वाचायला चांगलं आहे
+hyp:	लोकसत्ता वाचायला सांगलं आहे
+diff:	लोकसत्ता वाचायला (चांगलं->सांगलं) आहे
+blindtest_141006(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	तुम्हाला माहीत आहे काय झाले असेल
+hyp:	तुम्हाला माहीत आहे काय झाले असेल
+diff:	तुम्हाला माहीत आहे काय झाले असेल
+blindtest_141703(nwords=2,cor=2,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	शेवटचं सांगू
+hyp:	शेवटचं सांगू
+diff:	शेवटचं सांगू
+blindtest_142808(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आणि तुला एक दोन तीन
+hyp:	आणि तुला एक दोन तीन
+diff:	आणि तुला एक दोन तीन
+blindtest_146552(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_146760(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	टायगर माझ्या पायाजवळ पडला होता
+hyp:	टाइगर माझ्या पायाजवळ पडला होता
+diff:	(टायगर->टाइगर) माझ्या पायाजवळ पडला होता
+blindtest_147001(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला लवकर घरी जायचे आहे
+hyp:	मला लवकर घरी जायचे आहे
+diff:	मला लवकर घरी जायचे आहे
+blindtest_147113(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	ऐकायची तुम्हाला शनिवारचा दिवस होता
+hyp:	एकाहीची तुम्हाला शनिवारचा दिवस होता
+diff:	(ऐकायची->एकाहीची) तुम्हाला शनिवारचा दिवस होता
+blindtest_148870(nwords=3,cor=1,ins=1,del=0,sub=2) corr:33.33%,cer:100.00%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी भरवडा जाते
+diff:	(रेल्वेगाडी बरोडा->railway गाडी भरवडा) जाते
+blindtest_148951(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	ऑडी चा इमेज दाखवा
+hyp:	audio चा image दाखवा
+diff:	(ऑडी->audio) चा (इमेज->image) दाखवा
+blindtest_148994(nwords=3,cor=1,ins=2,del=0,sub=2) corr:33.33%,cer:133.33%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे कालनिरळ आहे की ऊ
+diff:	इकडे (कालनिर्णय घेऊ->कालनिरळ आहे की ऊ)
+blindtest_150081(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला आता गेले पाहिजे
+hyp:	मला आता गेले पाहिजे
+diff:	मला आता गेले पाहिजे
+blindtest_150121(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझा मनोरंजनासाठी वापर करतात
+hyp:	माझा मनोरंजनासाठी वापर करतात
+diff:	माझा मनोरंजनासाठी वापर करतात
+blindtest_150921(nwords=9,cor=8,ins=0,del=0,sub=1) corr:88.89%,cer:11.11%
+ref:	काय आहे ते काय आहे ते त्याला नाही सोंड
+hyp:	काय आहे ते काय आहे ते त्याला नाही son
+diff:	काय आहे ते काय आहे ते त्याला नाही (सोंड->son)
+blindtest_157424(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता मी तुला पकडतो
+hyp:	आता मी तुला पकडतो
+diff:	आता मी तुला पकडतो
+blindtest_157882(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	मुंबादेवी महाराष्ट्रातील प्रमुख देव आहे
+hyp:	मुंबईतही महाराष्ट्रातील प्रमुख देवी आहे
+diff:	(मुंबादेवी->मुंबईतही) महाराष्ट्रातील प्रमुख (देव->देवी) आहे
+blindtest_159414(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	तुम्हाला माहीत आहे काय झाले असेल
+hyp:	तुम्हाला माहीत आहे काय झाले असेल
+diff:	तुम्हाला माहीत आहे काय झाले असेल
+blindtest_159904(nwords=9,cor=8,ins=0,del=0,sub=1) corr:88.89%,cer:11.11%
+ref:	काय आहे ते काय आहे ते त्याला नाही सोंड
+hyp:	काय आहे ते काय आहे ते त्याला नाही sound
+diff:	काय आहे ते काय आहे ते त्याला नाही (सोंड->sound)
+blindtest_161406(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी बरोडा जाते
+diff:	(रेल्वेगाडी->railway गाडी) बरोडा जाते
+blindtest_161539(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	कुंभ आणि कन्या राशी आहे
+hyp:	कुंभ आणि कन्या राशि आहे
+diff:	कुंभ आणि कन्या (राशी->राशि) आहे
+blindtest_162620(nwords=4,cor=2,ins=0,del=1,sub=1) corr:50.00%,cer:50.00%
+ref:	साबरमती पोरबंदर ला आहे
+hyp:	साबरमती पोरबंदरला आहे
+diff:	साबरमती (पोरबंदर ला->पोरबंदरला) आहे
+blindtest_165325(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	आणि आता मला शिंक येणार आहे
+hyp:	आणि आता मला think येणार आहे
+diff:	आणि आता मला (शिंक->think) येणार आहे
+blindtest_168114(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	टीवीएस टायर्स चांगला धावते
+hyp:	tv स्टार्स चांगला दाखवते
+diff:	(टीवीएस टायर्स->tv स्टार्स) चांगला (धावते->दाखवते)
+blindtest_168769(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst solutions logistics market करतात
+diff:	(सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट->cst solutions logistics market) करतात
+blindtest_169076(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_169972(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_171059(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	लोकसत्ता वाचायला चांगलं आहे
+hyp:	लोकसत्ता वाचायला चांगला आहे
+diff:	लोकसत्ता वाचायला (चांगलं->चांगला) आहे
+blindtest_171846(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	फ्रांस पहिल्यापासून फायबर्स तयार करतात
+hyp:	france पहिल्यापासून fiber तयार करतात
+diff:	(फ्रांस->france) पहिल्यापासून (फायबर्स->fiber) तयार करतात
+blindtest_172188(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	मिघा urgent email print कर
+diff:	(मेघा अर्जंट ईमेल प्रिंट->मिघा urgent email print) कर
+blindtest_174274(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_174958(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_180744(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कुंभ आणि कन्या राशी आहे
+hyp:	कुंभ आणि कन्या राशी आहे
+diff:	कुंभ आणि कन्या राशी आहे
+blindtest_181825(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_183809(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझे नाव रेकोज आहे
+hyp:	माझे नाव रेकोज आहे
+diff:	माझे नाव रेकोज आहे
+blindtest_185067(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_185169(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_185232(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	मुंबादेवी महाराष्ट्रातील प्रमुख देव आहे
+hyp:	मुंबईदेवी महाराष्ट्रातील प्रमुख देव आहे
+diff:	(मुंबादेवी->मुंबईदेवी) महाराष्ट्रातील प्रमुख देव आहे
+blindtest_187937(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	भारत एक स्वतंत्र देश आहे
+hyp:	भारत एक स्वतंत्र देश आहे
+diff:	भारत एक स्वतंत्र देश आहे
+blindtest_189683(nwords=6,cor=3,ins=0,del=0,sub=3) corr:50.00%,cer:50.00%
+ref:	आठशे इंडियन कम्प्युटर वर वायरस आहे
+hyp:	आठशे indian computer वर virus आहे
+diff:	आठशे (इंडियन कम्प्युटर->indian computer) वर (वायरस->virus) आहे
+blindtest_190433(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	एंटर ही एक सूचना आहे
+hyp:	inter ही एक सूचना आहे
+diff:	(एंटर->inter) ही एक सूचना आहे
+blindtest_190830(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	पिझ्झा ची रेसिपी रिव्यू कर
+hyp:	pizza ची recipe review कर
+diff:	(पिझ्झा->pizza) ची (रेसिपी रिव्यू->recipe review) कर
+blindtest_192088(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+diff:	(सीएसटी->cst) सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+blindtest_192664(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	तू मला उलटि करशील
+hyp:	तुम्हाला उलटी करशील
+diff:	(तू मला उलटि->तुम्हाला उलटी) करशील
+blindtest_196722(nwords=5,cor=2,ins=1,del=0,sub=3) corr:40.00%,cer:80.00%
+ref:	फ्रांस पहिल्यापासून फायबर्स तयार करतात
+hyp:	france पहिल्या पासून fiber तयार करतात
+diff:	(फ्रांस पहिल्यापासून फायबर्स->france पहिल्या पासून fiber) तयार करतात
+blindtest_197425(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	ओणम केरळ राज्याचा उत्सव आहे
+hyp:	onam kerala राज्याचा उत्सव आहे
+diff:	(ओणम केरळ->onam kerala) राज्याचा उत्सव आहे
+blindtest_198292(nwords=2,cor=0,ins=0,del=0,sub=2) corr:0.00%,cer:100.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount घ्या
+diff:	(डिस्काऊंट द्या->discount घ्या)
+blindtest_200401(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_202671(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	क्लाउड वर डेटा अपलोड करायचा
+hyp:	cloud वर data upload करायचा
+diff:	(क्लाउड->cloud) वर (डेटा अपलोड->data upload) करायचा
+blindtest_204483(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_207862(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	ओणम केरळ राज्याचा उत्सव आहे
+hyp:	onam केरळ राज्याचा उत्सव आहे
+diff:	(ओणम->onam) केरळ राज्याचा उत्सव आहे
+blindtest_209589(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	डीएलएफ ची चाळीस स्टॉक घेऊ
+hyp:	dlf ची चाळीस stock घेऊ
+diff:	(डीएलएफ->dlf) ची चाळीस (स्टॉक->stock) घेऊ
+blindtest_214577(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी बरोडा जाते
+diff:	(रेल्वेगाडी->railway गाडी) बरोडा जाते
+blindtest_215994(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	क्लाउड वर डेटा अपलोड करायचा
+hyp:	cloud वर data upload करायचा
+diff:	(क्लाउड->cloud) वर (डेटा अपलोड->data upload) करायचा
+blindtest_217176(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	लोकसत्ता वाचायला चांगलं आहे
+hyp:	लोकसत्ता वाचायला चांगलं आहे
+diff:	लोकसत्ता वाचायला चांगलं आहे
+blindtest_219480(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	ब्रेकिंग न्यूज ब्लॉक करावा
+hyp:	breaking news block करावा
+diff:	(ब्रेकिंग न्यूज ब्लॉक->breaking news block) करावा
+blindtest_219504(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	महाशिवरात्री महोत्सव कोइमतूर शहरात साजरा करतात
+diff:	महाशिवरात्री महोत्सव (कोइंबतूर->कोइमतूर) शहरात साजरा करतात
+blindtest_221015(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	लोकसत्ता वाचायला चांगलं आहे
+hyp:	लोकसत्ता वाचायला चांगलं आहे
+diff:	लोकसत्ता वाचायला चांगलं आहे
+blindtest_221290(nwords=2,cor=0,ins=1,del=0,sub=2) corr:0.00%,cer:150.00%
+ref:	आगगाड्या थांबव
+hyp:	आग गाड्या थांबवू
+diff:	(आगगाड्या थांबव->आग गाड्या थांबवू)
+blindtest_223305(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझी जायची वेळ झाली
+hyp:	माझी जायची वेळ झाली
+diff:	माझी जायची वेळ झाली
+blindtest_223362(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_223977(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	भारत एक स्वतंत्र देश आहे
+hyp:	भारत एक स्वतंत्र देश आहे
+diff:	भारत एक स्वतंत्र देश आहे
+blindtest_225819(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	आजचा प्रोफाईल चांगला आहे
+hyp:	आजचा profile चांगला आहे
+diff:	आजचा (प्रोफाईल->profile) चांगला आहे
+blindtest_226813(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_229119(nwords=6,cor=3,ins=0,del=0,sub=3) corr:50.00%,cer:50.00%
+ref:	आठशे इंडियन कम्प्युटर वर वायरस आहे
+hyp:	आठशे indian computer वर virus आहे
+diff:	आठशे (इंडियन कम्प्युटर->indian computer) वर (वायरस->virus) आहे
+blindtest_229537(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आणि तुला एक दोन तीन
+hyp:	आणि तुला एक दोन तीन
+diff:	आणि तुला एक दोन तीन
+blindtest_232627(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनामा पूजा सांगशील
+diff:	(विष्णु सहस्त्रनाम->विष्णू सहस्त्रनामा) पूजा सांगशील
+blindtest_233177(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	बॅकवॉटर केरळ मध्ये आहे
+hyp:	backwater केरळमध्ये आहे
+diff:	(बॅकवॉटर केरळ मध्ये->backwater केरळमध्ये) आहे
+blindtest_234146(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	इथून पुढे शहर सुरू होतं
+hyp:	इथून पुढे शहर सुरू होतं
+diff:	इथून पुढे शहर सुरू होतं
+blindtest_235434(nwords=10,cor=9,ins=0,del=0,sub=1) corr:90.00%,cer:10.00%
+ref:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+hyp:	मजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+diff:	(म्हणजेच->मजेच) दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+blindtest_237195(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	कोणतीही टूअर्स जाऊ
+hyp:	कोणतीही towers जाऊ
+diff:	कोणतीही (टूअर्स->towers) जाऊ
+blindtest_238163(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	आजचा प्रोफाईल चांगला आहे
+hyp:	आता profile चांगला आहे
+diff:	(आजचा प्रोफाईल->आता profile) चांगला आहे
+blindtest_238741(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_240499(nwords=3,cor=2,ins=2,del=0,sub=1) corr:66.67%,cer:100.00%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे car नेर नाही घेऊ
+diff:	इकडे (कालनिर्णय->car नेर नाही) घेऊ
+blindtest_241423(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता आवाज जरा कमी झाला होता
+hyp:	आता आवाज जरा कमी झाला होता
+diff:	आता आवाज जरा कमी झाला होता
+blindtest_248251(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst solutions logistics market करतात
+diff:	(सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट->cst solutions logistics market) करतात
+blindtest_250911(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लेमन स्लश माझ्यासाठी घेशील
+hyp:	lemon juice माझ्यासाठी घेशील
+diff:	(लेमन स्लश->lemon juice) माझ्यासाठी घेशील
+blindtest_251111(nwords=6,cor=3,ins=0,del=0,sub=3) corr:50.00%,cer:50.00%
+ref:	राम वारांगल इंस्टीट्यूट मध्ये शिक्षक आहे
+hyp:	राम वाघल industry मध्ये शिक्षक आहेत
+diff:	राम (वारांगल इंस्टीट्यूट->वाघल industry) मध्ये शिक्षक (आहे->आहेत)
+blindtest_253147(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लॅपटॉप कुरिअर मधून येतो
+hyp:	laptop courier मधून येतो
+diff:	(लॅपटॉप कुरिअर->laptop courier) मधून येतो
+blindtest_253711(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	पिझ्झा ची रेसिपी रिव्यू कर
+hyp:	pizza ची recipe review कर
+diff:	(पिझ्झा->pizza) ची (रेसिपी रिव्यू->recipe review) कर
+blindtest_254077(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	ब्रेकिंग न्यूज ब्लॉक करावा
+hyp:	breaking news block करावा
+diff:	(ब्रेकिंग न्यूज ब्लॉक->breaking news block) करावा
+blindtest_254124(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	destop वर गाण्याची लायब्ररी आहे
+diff:	(डेस्कटॉप->destop) वर गाण्याची (लायब्रेरी->लायब्ररी) आहे
+blindtest_254768(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	आगगाड्या थांबव
+hyp:	आघाड्या थांबव
+diff:	(आगगाड्या->आघाड्या) थांबव
+blindtest_256094(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता मला अंघोळ करायची आहे
+hyp:	आता मला अंघोळ करायची आहे
+diff:	आता मला अंघोळ करायची आहे
+blindtest_256405(nwords=8,cor=2,ins=0,del=1,sub=5) corr:25.00%,cer:75.00%
+ref:	सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन करायची आहे
+hyp:	सोनेवाडीला garments industrial company open करायची आहे
+diff:	(सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन->सोनेवाडीला garments industrial company open) करायची आहे
+blindtest_260058(nwords=8,cor=7,ins=0,del=0,sub=1) corr:87.50%,cer:12.50%
+ref:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+hyp:	इथे मला तुझी आणि तुझ्या मित्रांचे आठवण होते
+diff:	इथे मला तुझी आणि तुझ्या (मित्रांची->मित्रांचे) आठवण होते
+blindtest_261671(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी बरोडा जाते
+diff:	(रेल्वेगाडी->railway गाडी) बरोडा जाते
+blindtest_261786(nwords=8,cor=8,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+hyp:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+diff:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+blindtest_262951(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	देशपांडे चर्चगेट ला उतरला
+hyp:	देशपांडे चर्चा गेटला उतरला
+diff:	देशपांडे (चर्चगेट ला->चर्चा गेटला) उतरला
+blindtest_263350(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	बॅकवॉटर केरळ मध्ये आहे
+hyp:	backwater केरळमध्ये आहे
+diff:	(बॅकवॉटर केरळ मध्ये->backwater केरळमध्ये) आहे
+blindtest_263594(nwords=4,cor=0,ins=0,del=0,sub=4) corr:0.00%,cer:100.00%
+ref:	टीवीएस टायर्स चांगला धावते
+hyp:	tv star चांगलं दाखवते
+diff:	(टीवीएस टायर्स चांगला धावते->tv star चांगलं दाखवते)
+blindtest_263828(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_264571(nwords=3,cor=0,ins=1,del=0,sub=3) corr:0.00%,cer:133.33%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी वरुडा जाती
+diff:	(रेल्वेगाडी बरोडा जाते->railway गाडी वरुडा जाती)
+blindtest_268399(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे काल निर्णय घेऊ
+diff:	इकडे (कालनिर्णय->काल निर्णय) घेऊ
+blindtest_271298(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	क्लाउड वर डेटा अपलोड करायचा
+hyp:	cloud word data upload करायचा
+diff:	(क्लाउड वर डेटा अपलोड->cloud word data upload) करायचा
+blindtest_274883(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	रेल्वेगाडी बुरुडा जाते
+diff:	रेल्वेगाडी (बरोडा->बुरुडा) जाते
+blindtest_275861(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_277835(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	तू मला उलटि करशील
+hyp:	तू मला उलटी करशील
+diff:	तू मला (उलटि->उलटी) करशील
+blindtest_280024(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	महाशिवरात्री महोत्सव कोइम्बत्तूर शहरात साजरा करतात
+diff:	महाशिवरात्री महोत्सव (कोइंबतूर->कोइम्बत्तूर) शहरात साजरा करतात
+blindtest_281403(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आणि तुला एक दोन तीन
+hyp:	आणि तुला एक दोन तीन
+diff:	आणि तुला एक दोन तीन
+blindtest_282813(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	काही म्हणजे काही सुधरत नाही
+hyp:	काही म्हणजे काही सुधरत नाहीत
+diff:	काही म्हणजे काही सुधरत (नाही->नाहीत)
+blindtest_284429(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	हिंदुस्तान सिन्थेटिक्स ची फॅब्रिक्स लाइट असते
+hyp:	हिंदुस्थान synthetic ची fabrics light असते
+diff:	(हिंदुस्तान सिन्थेटिक्स->हिंदुस्थान synthetic) ची (फॅब्रिक्स लाइट->fabrics light) असते
+blindtest_286579(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता तू घरी परत जा
+hyp:	आता तू घरी परत जा
+diff:	आता तू घरी परत जा
+blindtest_286803(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला पुन्हा उशीर झाला
+hyp:	मला पुन्हा उशीर झाला
+diff:	मला पुन्हा उशीर झाला
+blindtest_291851(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_292955(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला लवकर घरी जायचे आहे
+hyp:	मला लवकर घरी जायचे आहे
+diff:	मला लवकर घरी जायचे आहे
+blindtest_301709(nwords=6,cor=3,ins=0,del=1,sub=2) corr:50.00%,cer:50.00%
+ref:	राम वारांगल इंस्टीट्यूट मध्ये शिक्षक आहे
+hyp:	रामवारांगळ institute मध्ये शिक्षक आहे
+diff:	(राम वारांगल इंस्टीट्यूट->रामवारांगळ institute) मध्ये शिक्षक आहे
+blindtest_304438(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी बरोडा जाते
+diff:	(रेल्वेगाडी->railway गाडी) बरोडा जाते
+blindtest_304955(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_311919(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_313492(nwords=4,cor=2,ins=1,del=0,sub=2) corr:50.00%,cer:75.00%
+ref:	मला सकाळी कल्पना होतीच
+hyp:	मला सकाळी कळलं पण नव्हतीच
+diff:	मला सकाळी (कल्पना होतीच->कळलं पण नव्हतीच)
+blindtest_315658(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे काल निर्णय घेऊ
+diff:	इकडे (कालनिर्णय->काल निर्णय) घेऊ
+blindtest_316333(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_319365(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_319366(nwords=6,cor=3,ins=0,del=1,sub=2) corr:50.00%,cer:50.00%
+ref:	राम वारांगल इंस्टीट्यूट मध्ये शिक्षक आहे
+hyp:	रामवारांगार institute मध्ये शिक्षक आहे
+diff:	(राम वारांगल इंस्टीट्यूट->रामवारांगार institute) मध्ये शिक्षक आहे
+blindtest_320405(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	ब्रेकिंग न्यूज ब्लॉक करावा
+hyp:	breaking news block करावा
+diff:	(ब्रेकिंग न्यूज ब्लॉक->breaking news block) करावा
+blindtest_323385(nwords=2,cor=1,ins=1,del=0,sub=1) corr:50.00%,cer:100.00%
+ref:	आगगाड्या थांबव
+hyp:	आग गाड्या थांबव
+diff:	(आगगाड्या->आग गाड्या) थांबव
+blindtest_324744(nwords=8,cor=2,ins=0,del=1,sub=5) corr:25.00%,cer:75.00%
+ref:	सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन करायची आहे
+hyp:	सोनेवाडीला garments industrial company open करायची आहे
+diff:	(सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन->सोनेवाडीला garments industrial company open) करायची आहे
+blindtest_328445(nwords=10,cor=10,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+hyp:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+diff:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+blindtest_330391(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	इथून तिला काय काय
+hyp:	इथून तिला काय काय
+diff:	इथून तिला काय काय
+blindtest_331348(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+diff:	(सीएसटी->cst) सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+blindtest_333341(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	बरं झालं मला उशीर नाही झाला
+hyp:	बरं झालं मला उशीर नाही झाला
+diff:	बरं झालं मला उशीर नाही झाला
+blindtest_334161(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	अजून कालचाच दिवस आहे
+hyp:	आजून कालचाच दिवस आहे
+diff:	(अजून->आजून) कालचाच दिवस आहे
+blindtest_339039(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	तुम्हाला माहीत आहे काय झाले असेल
+hyp:	तुम्हाला माहीत आहे काय झालं असेल
+diff:	तुम्हाला माहीत आहे काय (झाले->झालं) असेल
+blindtest_339467(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे काल निर्णय घेऊ
+diff:	इकडे (कालनिर्णय->काल निर्णय) घेऊ
+blindtest_342590(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_342833(nwords=6,cor=3,ins=0,del=1,sub=2) corr:50.00%,cer:50.00%
+ref:	राम वारांगल इंस्टीट्यूट मध्ये शिक्षक आहे
+hyp:	रामवारांगेल institute मध्ये शिक्षक आहे
+diff:	(राम वारांगल इंस्टीट्यूट->रामवारांगेल institute) मध्ये शिक्षक आहे
+blindtest_342965(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	क्लाउड वर डेटा अपलोड करायचा
+hyp:	cloud वर data upload करायचा
+diff:	(क्लाउड->cloud) वर (डेटा अपलोड->data upload) करायचा
+blindtest_347253(nwords=2,cor=1,ins=1,del=0,sub=1) corr:50.00%,cer:100.00%
+ref:	आगगाड्या थांबव
+hyp:	आग काढ्यात थांबव
+diff:	(आगगाड्या->आग काढ्यात) थांबव
+blindtest_348562(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	इथून पुढे शहर सुरू होतं
+hyp:	इथून पुढे शहर सुरू होतं
+diff:	इथून पुढे शहर सुरू होतं
+blindtest_348819(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	साई नगर शिर्डी मध्ये आहे
+diff:	(साईनगर->साई नगर) शिर्डी मध्ये आहे
+blindtest_351240(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	आता हिरव्या खुश आहे
+hyp:	आता ही रिब्बा खुश आहे
+diff:	आता (हिरव्या->ही रिब्बा) खुश आहे
+blindtest_351503(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	पिझ्झा ची रेसिपी रिव्यू कर
+hyp:	pizza ची recipe review कर
+diff:	(पिझ्झा->pizza) ची (रेसिपी रिव्यू->recipe review) कर
+blindtest_357968(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे काल निर्णय घेऊ
+diff:	इकडे (कालनिर्णय->काल निर्णय) घेऊ
+blindtest_358225(nwords=10,cor=9,ins=0,del=0,sub=1) corr:90.00%,cer:10.00%
+ref:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+hyp:	म्हणजे दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+diff:	(म्हणजेच->म्हणजे) दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+blindtest_360045(nwords=4,cor=2,ins=0,del=1,sub=1) corr:50.00%,cer:50.00%
+ref:	दुपारी नांदेड ला जाऊ
+hyp:	दुपारी नांदेडला जाऊ
+diff:	दुपारी (नांदेड ला->नांदेडला) जाऊ
+blindtest_360546(nwords=5,cor=2,ins=2,del=0,sub=3) corr:40.00%,cer:100.00%
+ref:	जनशताब्दी तंजावूर जाणारी रेल्वेगाडी आहे
+hyp:	जन शताब्दी तंजापूर जाणारी railway गाडी आहे
+diff:	(जनशताब्दी तंजावूर->जन शताब्दी तंजापूर) जाणारी (रेल्वेगाडी->railway गाडी) आहे
+blindtest_361009(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+diff:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+blindtest_361016(nwords=9,cor=7,ins=0,del=0,sub=2) corr:77.78%,cer:22.22%
+ref:	काय आहे ते काय आहे ते त्याला नाही सोंड
+hyp:	काय आहे ते काय आहे ते त्याला knife सोड
+diff:	काय आहे ते काय आहे ते त्याला (नाही सोंड->knife सोड)
+blindtest_361282(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	एंटर ही एक सूचना आहे
+hyp:	inter ही एक सूचना आहे
+diff:	(एंटर->inter) ही एक सूचना आहे
+blindtest_364974(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लेमन स्लश माझ्यासाठी घेशील
+hyp:	lemon slice माझ्यासाठी घेशील
+diff:	(लेमन स्लश->lemon slice) माझ्यासाठी घेशील
+blindtest_366594(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	आजचा प्रोफाईल चांगला आहे
+hyp:	आजचा profile चांगला आहे
+diff:	आजचा (प्रोफाईल->profile) चांगला आहे
+blindtest_369036(nwords=10,cor=9,ins=0,del=0,sub=1) corr:90.00%,cer:10.00%
+ref:	या वर्षी मला वर्षे पूर्ण होतील म्हणजे माझा जन्म झाला
+hyp:	या वर्षी मला वर्ष पूर्ण होतील म्हणजे माझा जन्म झाला
+diff:	या वर्षी मला (वर्षे->वर्ष) पूर्ण होतील म्हणजे माझा जन्म झाला
+blindtest_370596(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	कोणतीही टूअर्स जाऊ
+hyp:	कोणतीही towers जाऊ
+diff:	कोणतीही (टूअर्स->towers) जाऊ
+blindtest_371254(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	मेघा अर्जंट email print कर
+diff:	मेघा अर्जंट (ईमेल प्रिंट->email print) कर
+blindtest_372837(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आणि तुला एक दोन तीन
+hyp:	आणि तुला एक दोन तीन
+diff:	आणि तुला एक दोन तीन
+blindtest_374182(nwords=5,cor=3,ins=1,del=0,sub=2) corr:60.00%,cer:60.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	desk top वर गाण्याची लायब्ररी आहे
+diff:	(डेस्कटॉप->desk top) वर गाण्याची (लायब्रेरी->लायब्ररी) आहे
+blindtest_374653(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	क्लाउड वर डेटा अपलोड करायचा
+hyp:	cloud वर data upload करायचा
+diff:	(क्लाउड->cloud) वर (डेटा अपलोड->data upload) करायचा
+blindtest_375192(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता खेळायची वेळ झाली
+hyp:	आता खेळायची वेळ झाली
+diff:	आता खेळायची वेळ झाली
+blindtest_375762(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	ऐकायची तुम्हाला शनिवारचा दिवस होता
+hyp:	एकाची तुम्हाला शनिवारचा दिवस होता
+diff:	(ऐकायची->एकाची) तुम्हाला शनिवारचा दिवस होता
+blindtest_377547(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कुंभ आणि कन्या राशी आहे
+hyp:	कुंभ आणि कन्या राशी आहे
+diff:	कुंभ आणि कन्या राशी आहे
+blindtest_378813(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international कार आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल->bmw international) कार आहे
+blindtest_381622(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	बघूया तू बरोबर सांगतेस का
+hyp:	बघूया तू बरोबर सांगतेस का
+diff:	बघूया तू बरोबर सांगतेस का
+blindtest_381794(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	हिंदुस्तान सिन्थेटिक्स ची फॅब्रिक्स लाइट असते
+hyp:	हिंदुस्थान synthetic ची fabrics light असते
+diff:	(हिंदुस्तान सिन्थेटिक्स->हिंदुस्थान synthetic) ची (फॅब्रिक्स लाइट->fabrics light) असते
+blindtest_382157(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आईनं थोडा वेळ विचार केला
+hyp:	आईनं थोडा वेळ विचार केला
+diff:	आईनं थोडा वेळ विचार केला
+blindtest_384909(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आणि अचानक एक आवाज आला
+hyp:	आणि अचानक एक आवाज आला
+diff:	आणि अचानक एक आवाज आला
+blindtest_386932(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst सोलुशन लॉजिस्टिक मार्केट करतात
+diff:	(सीएसटी सोल्यूशन्स लॉजिस्टिक्स->cst सोलुशन लॉजिस्टिक) मार्केट करतात
+blindtest_390180(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_391155(nwords=8,cor=8,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+hyp:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+diff:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+blindtest_393234(nwords=8,cor=8,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+hyp:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+diff:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+blindtest_393404(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लॅपटॉप कुरिअर मधून येतो
+hyp:	laptop courier मधून येतो
+diff:	(लॅपटॉप कुरिअर->laptop courier) मधून येतो
+blindtest_393889(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_395047(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_396753(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	ऐकायची तुम्हाला शनिवारचा दिवस होता
+hyp:	एकाची तुम्हाला शनिवारचा दिवस होता
+diff:	(ऐकायची->एकाची) तुम्हाला शनिवारचा दिवस होता
+blindtest_399007(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता मी तुला पकडतो
+hyp:	आता मी तुला पकडतो
+diff:	आता मी तुला पकडतो
+blindtest_399773(nwords=7,cor=6,ins=0,del=0,sub=1) corr:85.71%,cer:14.29%
+ref:	हा जलतरंग म्हणजे माझ्या आईची आठवण आहे
+hyp:	हा जलतरंग म्हनजे माझ्या आईची आठवण आहे
+diff:	हा जलतरंग (म्हणजे->म्हनजे) माझ्या आईची आठवण आहे
+blindtest_400319(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	वसंत राउटर सेटिंग्स करायला येतो
+hyp:	वसंत router settings करायला येतो
+diff:	वसंत (राउटर सेटिंग्स->router settings) करायला येतो
+blindtest_400782(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	मुंबादेवी महाराष्ट्रातील प्रमुख देव आहे
+hyp:	मुंबईदेवी महाराष्ट्रातील प्रमुख देवा आहे
+diff:	(मुंबादेवी->मुंबईदेवी) महाराष्ट्रातील प्रमुख (देव->देवा) आहे
+blindtest_401000(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_401475(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	काही कार मध्ये
+hyp:	काही car मध्ये
+diff:	काही (कार->car) मध्ये
+blindtest_403292(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_403763(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लेमन स्लश माझ्यासाठी घेशील
+hyp:	lemon flush माझ्यासाठी घेशील
+diff:	(लेमन स्लश->lemon flush) माझ्यासाठी घेशील
+blindtest_404253(nwords=7,cor=7,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मी काय आज आहे तर उद्या नाही
+hyp:	मी काय आज आहे तर उद्या नाही
+diff:	मी काय आज आहे तर उद्या नाही
+blindtest_405692(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	महाशिवरात्री मोहतसव कोइंबतूर शहरात साजरा करतात
+diff:	महाशिवरात्री (महोत्सव->मोहतसव) कोइंबतूर शहरात साजरा करतात
+blindtest_406503(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	आणि आता मला शिंक येणार आहे
+hyp:	आणि आता मला singing येणार आहे
+diff:	आणि आता मला (शिंक->singing) येणार आहे
+blindtest_406666(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	ऐकायची तुम्हाला शनिवारचा दिवस होता
+hyp:	ऐकाची तुम्हाला शनिवारचा दिवस होता
+diff:	(ऐकायची->ऐकाची) तुम्हाला शनिवारचा दिवस होता
+blindtest_408460(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	वसंत राउटर सेटिंग्स करायला येतो
+hyp:	वसंत router settings करायला येतो
+diff:	वसंत (राउटर सेटिंग्स->router settings) करायला येतो
+blindtest_409062(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लॅपटॉप कुरिअर मधून येतो
+hyp:	laptop courier मधून येतो
+diff:	(लॅपटॉप कुरिअर->laptop courier) मधून येतो
+blindtest_413762(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	बॅकवॉटर केरळ मध्ये आहे
+hyp:	backwater केरळमध्ये आहे
+diff:	(बॅकवॉटर केरळ मध्ये->backwater केरळमध्ये) आहे
+blindtest_414205(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	कोणतीही टूअर्स जाऊ
+hyp:	कोणतीही towers जाऊ
+diff:	कोणतीही (टूअर्स->towers) जाऊ
+blindtest_416910(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	एप डाऊनलोड कर
+hyp:	एप download कर
+diff:	एप (डाऊनलोड->download) कर
+blindtest_417005(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता हिरव्या खुश आहे
+hyp:	आता हिरव्या खुश आहे
+diff:	आता हिरव्या खुश आहे
+blindtest_417892(nwords=6,cor=4,ins=0,del=0,sub=2) corr:66.67%,cer:33.33%
+ref:	तुम्हाला माहीत आहे काय झाले असेल
+hyp:	तुम्हाला माहिती आहे काय झालं असेल
+diff:	तुम्हाला (माहीत->माहिती) आहे काय (झाले->झालं) असेल
+blindtest_420442(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_423468(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	एंटर ही एक सूचना आहे
+hyp:	enter ही एक सूचना आहे
+diff:	(एंटर->enter) ही एक सूचना आहे
+blindtest_424114(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_426338(nwords=6,cor=3,ins=0,del=0,sub=3) corr:50.00%,cer:50.00%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	सॅमसंग mobile वर photos compare कर
+diff:	सॅमसंग (मोबाईल->mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_430451(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	ऑडी चा इमेज दाखवा
+hyp:	ऑडीचा image दाखवा
+diff:	(ऑडी चा इमेज->ऑडीचा image) दाखवा
+blindtest_430799(nwords=2,cor=2,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	शेवटचं सांगू
+hyp:	शेवटचं सांगू
+diff:	शेवटचं सांगू
+blindtest_432020(nwords=6,cor=3,ins=0,del=0,sub=3) corr:50.00%,cer:50.00%
+ref:	आठशे इंडियन कम्प्युटर वर वायरस आहे
+hyp:	आठशे indian computer वर virus आहे
+diff:	आठशे (इंडियन कम्प्युटर->indian computer) वर (वायरस->virus) आहे
+blindtest_433502(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कोण आहे कोण आहे
+hyp:	कोण आहे कोण आहे
+diff:	कोण आहे कोण आहे
+blindtest_435219(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_437982(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	sainagar city मध्ये आहे
+diff:	(साईनगर शिर्डी->sainagar city) मध्ये आहे
+blindtest_441603(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_441852(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	आप download कर
+diff:	(एप डाऊनलोड->आप download) कर
+blindtest_442446(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता मी तुला पकडतो
+hyp:	आता मी तुला पकडतो
+diff:	आता मी तुला पकडतो
+blindtest_443123(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	क्लाउड वर डेटा अपलोड करायचा
+hyp:	cloud वर data upload करायचा
+diff:	(क्लाउड->cloud) वर (डेटा अपलोड->data upload) करायचा
+blindtest_443455(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	megha urgent email print कर
+diff:	(मेघा अर्जंट ईमेल प्रिंट->megha urgent email print) कर
+blindtest_444467(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे काल निर्णय घेऊ
+diff:	इकडे (कालनिर्णय->काल निर्णय) घेऊ
+blindtest_445056(nwords=3,cor=3,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कुठल्या आवाजातील ऐकायचं
+hyp:	कुठल्या आवाजातील ऐकायचं
+diff:	कुठल्या आवाजातील ऐकायचं
+blindtest_445075(nwords=4,cor=2,ins=0,del=1,sub=1) corr:50.00%,cer:50.00%
+ref:	दुपारी नांदेड ला जाऊ
+hyp:	दुपारी नांदेडला जाऊ
+diff:	दुपारी (नांदेड ला->नांदेडला) जाऊ
+blindtest_447133(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	क्लाउड वर डेटा अपलोड करायचा
+hyp:	cloud वर data upload करायचा
+diff:	(क्लाउड->cloud) वर (डेटा अपलोड->data upload) करायचा
+blindtest_447160(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_447295(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	sainagar siridi मध्ये आहे
+diff:	(साईनगर शिर्डी->sainagar siridi) मध्ये आहे
+blindtest_447556(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	गोदावरी मेसेजेस पाठव
+hyp:	गोदावरी messages पाठव
+diff:	गोदावरी (मेसेजेस->messages) पाठव
+blindtest_448642(nwords=5,cor=2,ins=2,del=0,sub=3) corr:40.00%,cer:100.00%
+ref:	जनशताब्दी तंजावूर जाणारी रेल्वेगाडी आहे
+hyp:	जन शताब्दी तंज्यावर जाणारी railway गाडी आहे
+diff:	(जनशताब्दी तंजावूर->जन शताब्दी तंज्यावर) जाणारी (रेल्वेगाडी->railway गाडी) आहे
+blindtest_449338(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	मेघा urgent email print कर
+diff:	मेघा (अर्जंट ईमेल प्रिंट->urgent email print) कर
+blindtest_449455(nwords=3,cor=3,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कुठल्या आवाजातील ऐकायचं
+hyp:	कुठल्या आवाजातील ऐकायचं
+diff:	कुठल्या आवाजातील ऐकायचं
+blindtest_450263(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	तुम्हाला माहीत आहे काय झाले असेल
+hyp:	तुम्हाला माहीत आहे काय झाले असेल
+diff:	तुम्हाला माहीत आहे काय झाले असेल
+blindtest_450995(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst solution logistics market करतात
+diff:	(सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट->cst solution logistics market) करतात
+blindtest_451292(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_454037(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	आजचा प्रोफाईल चांगला आहे
+hyp:	आजचा profile चांगला आहे
+diff:	आजचा (प्रोफाईल->profile) चांगला आहे
+blindtest_454542(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	desktop वर गाण्याची लायब्ररी आहे
+diff:	(डेस्कटॉप->desktop) वर गाण्याची (लायब्रेरी->लायब्ररी) आहे
+blindtest_455716(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	megha urgent email print कर
+diff:	(मेघा अर्जंट ईमेल प्रिंट->megha urgent email print) कर
+blindtest_456368(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	अरुणाचल मध्ये इटानगर आहे
+hyp:	अरुणाचल मध्ये it नगर आहे
+diff:	अरुणाचल मध्ये (इटानगर->it नगर) आहे
+blindtest_456372(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	आता मला अंघोळ करायची आहे
+hyp:	आता मला आंघोळ करायची आहे
+diff:	आता मला (अंघोळ->आंघोळ) करायची आहे
+blindtest_457159(nwords=8,cor=8,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझी आई कुठे आहे माझी आई कुठे आहे
+hyp:	माझी आई कुठे आहे माझी आई कुठे आहे
+diff:	माझी आई कुठे आहे माझी आई कुठे आहे
+blindtest_457300(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	तुम्हाला माहीत आहे काय झाले असेल
+hyp:	तुम्हाला माहीत आहे काय झाले असेल
+diff:	तुम्हाला माहीत आहे काय झाले असेल
+blindtest_457762(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	माझे नाव रेकोज आहे
+hyp:	माझे नाव rekoz आहे
+diff:	माझे नाव (रेकोज->rekoz) आहे
+blindtest_458237(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_460212(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_460395(nwords=10,cor=8,ins=0,del=0,sub=2) corr:80.00%,cer:20.00%
+ref:	मला सांगा ड्रोन म्हणजे काय मला सांगा ड्रोन म्हणजे काय
+hyp:	मला सांगा drone म्हणजे काय मला सांगा drone म्हणजे काय
+diff:	मला सांगा (ड्रोन->drone) म्हणजे काय मला सांगा (ड्रोन->drone) म्हणजे काय
+blindtest_461084(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_467929(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	डीएलएफ ची चाळीस स्टॉक घेऊ
+hyp:	dlf ची चाळीस टक्के घव
+diff:	(डीएलएफ->dlf) ची चाळीस (स्टॉक घेऊ->टक्के घव)
+blindtest_471138(nwords=4,cor=0,ins=0,del=0,sub=4) corr:0.00%,cer:100.00%
+ref:	टीवीएस टायर्स चांगला धावते
+hyp:	tv star चांगलं दाखवते
+diff:	(टीवीएस टायर्स चांगला धावते->tv star चांगलं दाखवते)
+blindtest_471587(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	लोकसत्ता वाचायला चांगलं आहे
+hyp:	लोकसत्ता वाचायला चांगलं आहे
+diff:	लोकसत्ता वाचायला चांगलं आहे
+blindtest_475334(nwords=6,cor=3,ins=0,del=0,sub=3) corr:50.00%,cer:50.00%
+ref:	आठशे इंडियन कम्प्युटर वर वायरस आहे
+hyp:	आठशे indian computer वर virus आहे
+diff:	आठशे (इंडियन कम्प्युटर->indian computer) वर (वायरस->virus) आहे
+blindtest_479014(nwords=6,cor=4,ins=0,del=0,sub=2) corr:66.67%,cer:33.33%
+ref:	तुम्हाला माहीत आहे काय झाले असेल
+hyp:	तुम्हाला माहित आहे काय झालं असेल
+diff:	तुम्हाला (माहीत->माहित) आहे काय (झाले->झालं) असेल
+blindtest_479645(nwords=5,cor=3,ins=0,del=1,sub=1) corr:60.00%,cer:40.00%
+ref:	आपण एक शून्य काढू या
+hyp:	आपण एक शून्य काढूया
+diff:	आपण एक शून्य (काढू या->काढूया)
+blindtest_483296(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	मला सकाळी कल्पना होतीच
+hyp:	मला सकाळी कल्पना होती
+diff:	मला सकाळी कल्पना (होतीच->होती)
+blindtest_487570(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_488503(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आणि तुला एक दोन तीन
+hyp:	आणि तुला एक दोन तीन
+diff:	आणि तुला एक दोन तीन
+blindtest_489388(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	मला पुन्हा उशीर झाला
+hyp:	मला पुन्हा wishers झाला
+diff:	मला पुन्हा (उशीर->wishers) झाला
+blindtest_489828(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_490387(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_492686(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पुजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम (पूजा->पुजा) सांगशील
+blindtest_494156(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_495472(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	माशिराती महोत्सव कोइंबतूर शहरात साजरा करतात
+diff:	(महाशिवरात्री->माशिराती) महोत्सव कोइंबतूर शहरात साजरा करतात
+blindtest_495520(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आणि अचानक एक आवाज आला
+hyp:	आणि अचानक एक आवाज आला
+diff:	आणि अचानक एक आवाज आला
+blindtest_499606(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	लोकसत्ता वाचायला चांगलं आहे
+hyp:	लोकसत्ता वाचायला चांगलं आहे
+diff:	लोकसत्ता वाचायला चांगलं आहे
+blindtest_499972(nwords=10,cor=10,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+hyp:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+diff:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+blindtest_502663(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	बरं झालं मला उशीर नाही झाला
+hyp:	बरं झालं मला उशीर नाही झाला
+diff:	बरं झालं मला उशीर नाही झाला
+blindtest_504710(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	टीवीएस टायर्स चांगला धावते
+hyp:	tvs टायर्स चांगलाच होते
+diff:	(टीवीएस->tvs) टायर्स (चांगला धावते->चांगलाच होते)
+blindtest_504898(nwords=6,cor=4,ins=0,del=0,sub=2) corr:66.67%,cer:33.33%
+ref:	आठशे इंडियन कम्प्युटर वर वायरस आहे
+hyp:	आठशे indian computer वर वायरस आहे
+diff:	आठशे (इंडियन कम्प्युटर->indian computer) वर वायरस आहे
+blindtest_505378(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_506802(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कोण आहे कोण आहे
+hyp:	कोण आहे कोण आहे
+diff:	कोण आहे कोण आहे
+blindtest_509800(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	मुंबादेवी महाराष्ट्रातील प्रमुख देव आहे
+hyp:	मुंबईदेवी महाराष्ट्रातील प्रमुख देव आहे
+diff:	(मुंबादेवी->मुंबईदेवी) महाराष्ट्रातील प्रमुख देव आहे
+blindtest_511939(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता हिरव्या खुश आहे
+hyp:	आता हिरव्या खुश आहे
+diff:	आता हिरव्या खुश आहे
+blindtest_514261(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता मी तुला पकडतो
+hyp:	आता मी तुला पकडतो
+diff:	आता मी तुला पकडतो
+blindtest_516515(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	टायगर माझ्या पायाजवळ पडला होता
+hyp:	टाइगर माझ्या पायाजवळ पडला होता
+diff:	(टायगर->टाइगर) माझ्या पायाजवळ पडला होता
+blindtest_517670(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझा मनोरंजनासाठी वापर करतात
+hyp:	माझा मनोरंजनासाठी वापर करतात
+diff:	माझा मनोरंजनासाठी वापर करतात
+blindtest_518025(nwords=10,cor=8,ins=0,del=0,sub=2) corr:80.00%,cer:20.00%
+ref:	मला सांगा ड्रोन म्हणजे काय मला सांगा ड्रोन म्हणजे काय
+hyp:	मला सांगा drone म्हणजे काय मला सांगा drone म्हणजे काय
+diff:	मला सांगा (ड्रोन->drone) म्हणजे काय मला सांगा (ड्रोन->drone) म्हणजे काय
+blindtest_518059(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कोण आहे कोण आहे
+hyp:	कोण आहे कोण आहे
+diff:	कोण आहे कोण आहे
+blindtest_520162(nwords=6,cor=3,ins=0,del=1,sub=2) corr:50.00%,cer:50.00%
+ref:	राम वारांगल इंस्टीट्यूट मध्ये शिक्षक आहे
+hyp:	रामवारांगळ institute मध्ये शिक्षक आहे
+diff:	(राम वारांगल इंस्टीट्यूट->रामवारांगळ institute) मध्ये शिक्षक आहे
+blindtest_522415(nwords=8,cor=2,ins=0,del=1,sub=5) corr:25.00%,cer:75.00%
+ref:	सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन करायची आहे
+hyp:	सोनेवाडीला garments industrial company open करायची आहे
+diff:	(सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन->सोनेवाडीला garments industrial company open) करायची आहे
+blindtest_524724(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता मी तुला पकडतो
+hyp:	आता मी तुला पकडतो
+diff:	आता मी तुला पकडतो
+blindtest_525311(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	महाशिवरात्री महोत्सव कोयंबतूर शहरात साजरा करतात
+diff:	महाशिवरात्री महोत्सव (कोइंबतूर->कोयंबतूर) शहरात साजरा करतात
+blindtest_526085(nwords=6,cor=3,ins=0,del=0,sub=3) corr:50.00%,cer:50.00%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	सॅमसंग mobile वर photos compare कर
+diff:	सॅमसंग (मोबाईल->mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_528801(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	मुंबादेवी महाराष्ट्रातील प्रमुख देव आहे
+hyp:	मुंबईदेवी महाराष्ट्रातील प्रमुख देव आहे
+diff:	(मुंबादेवी->मुंबईदेवी) महाराष्ट्रातील प्रमुख देव आहे
+blindtest_529532(nwords=3,cor=1,ins=1,del=0,sub=2) corr:33.33%,cer:100.00%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी भरवडा जाते
+diff:	(रेल्वेगाडी बरोडा->railway गाडी भरवडा) जाते
+blindtest_531431(nwords=7,cor=4,ins=0,del=0,sub=3) corr:57.14%,cer:42.86%
+ref:	अमेझॉन वर इंग्रजी बुक्स ऑफर मध्ये आहे
+hyp:	amazon वर इंग्रजी books offer मध्ये आहे
+diff:	(अमेझॉन->amazon) वर इंग्रजी (बुक्स ऑफर->books offer) मध्ये आहे
+blindtest_533611(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_533858(nwords=5,cor=3,ins=1,del=0,sub=2) corr:60.00%,cer:60.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	desk top वर गाण्याची लायब्ररी आहे
+diff:	(डेस्कटॉप->desk top) वर गाण्याची (लायब्रेरी->लायब्ररी) आहे
+blindtest_534381(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	मुंबादेवी महाराष्ट्रातील प्रमुख देव आहे
+hyp:	मुंबईदेवी महाराष्ट्रातील प्रमुख देव आहे
+diff:	(मुंबादेवी->मुंबईदेवी) महाराष्ट्रातील प्रमुख देव आहे
+blindtest_534571(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	आता मला अंघोळ करायची आहे
+hyp:	आता मला angle करायची आहे
+diff:	आता मला (अंघोळ->angle) करायची आहे
+blindtest_535224(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लॅपटॉप कुरिअर मधून येतो
+hyp:	laptop courier मधून येतो
+diff:	(लॅपटॉप कुरिअर->laptop courier) मधून येतो
+blindtest_535537(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_536394(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	साई नगर शिर्डी मध्ये आहे
+diff:	(साईनगर->साई नगर) शिर्डी मध्ये आहे
+blindtest_536961(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_539145(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos capture कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos capture) कर
+blindtest_540364(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला लवकर घरी जायचे आहे
+hyp:	मला लवकर घरी जायचे आहे
+diff:	मला लवकर घरी जायचे आहे
+blindtest_540464(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता तू मला पैसे दिले पाहिजेत
+hyp:	आता तू मला पैसे दिले पाहिजेत
+diff:	आता तू मला पैसे दिले पाहिजेत
+blindtest_540766(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_541427(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी बरोडा जाते
+diff:	(रेल्वेगाडी->railway गाडी) बरोडा जाते
+blindtest_542091(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	साबरमती पोरबंदर ला आहे
+hyp:	साबरमती पोर बंदरला आहे
+diff:	साबरमती (पोरबंदर ला->पोर बंदरला) आहे
+blindtest_542286(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आणि अचानक एक आवाज आला
+hyp:	आणि अचानक एक आवाज आला
+diff:	आणि अचानक एक आवाज आला
+blindtest_542536(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	ऐकायची तुम्हाला शनिवारचा दिवस होता
+hyp:	एकाची तुम्हाला शनिवारचा दिवस होता
+diff:	(ऐकायची->एकाची) तुम्हाला शनिवारचा दिवस होता
+blindtest_542906(nwords=9,cor=7,ins=0,del=0,sub=2) corr:77.78%,cer:22.22%
+ref:	काय आहे ते काय आहे ते त्याला नाही सोंड
+hyp:	काय आहे ते काय आहे ते त्याला नाहीच होऊन
+diff:	काय आहे ते काय आहे ते त्याला (नाही सोंड->नाहीच होऊन)
+blindtest_544592(nwords=8,cor=8,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+hyp:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+diff:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+blindtest_545525(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	डीएलएफ ची चाळीस स्टॉक घेऊ
+hyp:	dlf ची चाळीस stock घेऊ
+diff:	(डीएलएफ->dlf) ची चाळीस (स्टॉक->stock) घेऊ
+blindtest_545557(nwords=4,cor=0,ins=0,del=0,sub=4) corr:0.00%,cer:100.00%
+ref:	टीवीएस टायर्स चांगला धावते
+hyp:	tv star चांगलं दाखवते
+diff:	(टीवीएस टायर्स चांगला धावते->tv star चांगलं दाखवते)
+blindtest_545682(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_547274(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	desktop वर गाण्यांची लायब्ररी आहे
+diff:	(डेस्कटॉप->desktop) वर (गाण्याची लायब्रेरी->गाण्यांची लायब्ररी) आहे
+blindtest_549107(nwords=5,cor=4,ins=1,del=0,sub=1) corr:80.00%,cer:40.00%
+ref:	मुंबादेवी महाराष्ट्रातील प्रमुख देव आहे
+hyp:	मुंबई देवी महाराष्ट्रातील प्रमुख देव आहे
+diff:	(मुंबादेवी->मुंबई देवी) महाराष्ट्रातील प्रमुख देव आहे
+blindtest_552880(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	ब्रेकिंग न्यूज ब्लॉक करावा
+hyp:	breaking news block करावा
+diff:	(ब्रेकिंग न्यूज ब्लॉक->breaking news block) करावा
+blindtest_555388(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता आवाज जरा कमी झाला होता
+hyp:	आता आवाज जरा कमी झाला होता
+diff:	आता आवाज जरा कमी झाला होता
+blindtest_561447(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	रेल्वेगाडी भरवडा जाते
+diff:	रेल्वेगाडी (बरोडा->भरवडा) जाते
+blindtest_562624(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_562873(nwords=10,cor=10,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+hyp:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+diff:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+blindtest_565211(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_565856(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_568738(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst సెల्युशन्स लॉजिस्टिक्स मार्केट करतात
+diff:	(सीएसटी सोल्यूशन्स->cst సెల्युशन्स) लॉजिस्टिक्स मार्केट करतात
+blindtest_570536(nwords=3,cor=1,ins=1,del=0,sub=2) corr:33.33%,cer:100.00%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी भरवडा जाते
+diff:	(रेल्वेगाडी बरोडा->railway गाडी भरवडा) जाते
+blindtest_573836(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला लवकर घरी जायचे आहे
+hyp:	मला लवकर घरी जायचे आहे
+diff:	मला लवकर घरी जायचे आहे
+blindtest_574849(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	लोकसत्ता वाचायला चांगलं आहे
+hyp:	लोकसत्ता वाचायला चांगलं आहे
+diff:	लोकसत्ता वाचायला चांगलं आहे
+blindtest_575740(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_575897(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कोण आहे कोण आहे
+hyp:	कोण आहे कोण आहे
+diff:	कोण आहे कोण आहे
+blindtest_577540(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	बघूया तू बरोबर सांगतेस का
+hyp:	बघूया तू बरोबर सांगतेस का
+diff:	बघूया तू बरोबर सांगतेस का
+blindtest_578641(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	आणि आता मला शिंक येणार आहे
+hyp:	आणि आता मला शिक येणार आहे
+diff:	आणि आता मला (शिंक->शिक) येणार आहे
+blindtest_579045(nwords=4,cor=4,ins=1,del=0,sub=0) corr:100.00%,cer:25.00%
+ref:	इथून तिला काय काय
+hyp:	इथून तिला काय काय आहे
+diff:	इथून तिला काय काय (*->आहे)
+blindtest_581050(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला लवकर घरी जायचे आहे
+hyp:	मला लवकर घरी जायचे आहे
+diff:	मला लवकर घरी जायचे आहे
+blindtest_583192(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	आणि आता मला शिंक येणार आहे
+hyp:	आणि आता मला singing येणार आहे
+diff:	आणि आता मला (शिंक->singing) येणार आहे
+blindtest_583444(nwords=3,cor=1,ins=1,del=0,sub=2) corr:33.33%,cer:100.00%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	रेल्वे गाडी भरवडा जाते
+diff:	(रेल्वेगाडी बरोडा->रेल्वे गाडी भरवडा) जाते
+blindtest_586106(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	मुंबादेवी महाराष्ट्रातील प्रमुख देव आहे
+hyp:	मुंबईदेवी महाराष्ट्रातील प्रमुख देव आहे
+diff:	(मुंबादेवी->मुंबईदेवी) महाराष्ट्रातील प्रमुख देव आहे
+blindtest_586653(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आईनं थोडा वेळ विचार केला
+hyp:	आईनं थोडा वेळ विचार केला
+diff:	आईनं थोडा वेळ विचार केला
+blindtest_586921(nwords=7,cor=5,ins=0,del=0,sub=2) corr:71.43%,cer:28.57%
+ref:	काय मिळाले मला हा मस्त उमदा घोडा
+hyp:	काय मिळाले मला हा मस्त umd आठवडा
+diff:	काय मिळाले मला हा मस्त (उमदा घोडा->umd आठवडा)
+blindtest_587944(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_590461(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता हिरव्या खुश आहे
+hyp:	आता हिरव्या खुश आहे
+diff:	आता हिरव्या खुश आहे
+blindtest_591233(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	उद्या ये तू पुन्हा
+hyp:	उद्या ये तू पुन्हा
+diff:	उद्या ये तू पुन्हा
+blindtest_596818(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_597623(nwords=5,cor=3,ins=1,del=0,sub=2) corr:60.00%,cer:60.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	best stop वर गाण्याची लायब्ररी आहे
+diff:	(डेस्कटॉप->best stop) वर गाण्याची (लायब्रेरी->लायब्ररी) आहे
+blindtest_599328(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता तू घरी परत जा
+hyp:	आता तू घरी परत जा
+diff:	आता तू घरी परत जा
+blindtest_599989(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	पिझ्झा ची रेसिपी रिव्यू कर
+hyp:	pizza ची recipe review कर
+diff:	(पिझ्झा->pizza) ची (रेसिपी रिव्यू->recipe review) कर
+blindtest_601329(nwords=9,cor=8,ins=0,del=0,sub=1) corr:88.89%,cer:11.11%
+ref:	काय आहे ते काय आहे ते त्याला नाही सोंड
+hyp:	काय आहे ते काय आहे ते त्याला नाही सोड
+diff:	काय आहे ते काय आहे ते त्याला नाही (सोंड->सोड)
+blindtest_601909(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझ्या काकाचे लग्न आहे
+hyp:	माझ्या काकाचे लग्न आहे
+diff:	माझ्या काकाचे लग्न आहे
+blindtest_602616(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला पुन्हा उशीर झाला
+hyp:	मला पुन्हा उशीर झाला
+diff:	मला पुन्हा उशीर झाला
+blindtest_603378(nwords=3,cor=1,ins=1,del=0,sub=2) corr:33.33%,cer:100.00%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी भरवडा जाते
+diff:	(रेल्वेगाडी बरोडा->railway गाडी भरवडा) जाते
+blindtest_606600(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	आता मला अंघोळ करायची आहे
+hyp:	आता आम्हाला angle करायची आहे
+diff:	आता (मला अंघोळ->आम्हाला angle) करायची आहे
+blindtest_607116(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_607899(nwords=3,cor=1,ins=1,del=0,sub=2) corr:33.33%,cer:100.00%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे call नाही निघू
+diff:	इकडे (कालनिर्णय घेऊ->call नाही निघू)
+blindtest_608221(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता तू घरी परत जा
+hyp:	आता तू घरी परत जा
+diff:	आता तू घरी परत जा
+blindtest_611185(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनामपूजा सांगशील
+diff:	(विष्णु सहस्त्रनाम पूजा->विष्णू सहस्त्रनामपूजा) सांगशील
+blindtest_613351(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_619880(nwords=4,cor=2,ins=1,del=0,sub=2) corr:50.00%,cer:75.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सह त्रनाम पूजा सांगशील
+diff:	(विष्णु सहस्त्रनाम->विष्णू सह त्रनाम) पूजा सांगशील
+blindtest_620751(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_622471(nwords=8,cor=2,ins=0,del=1,sub=5) corr:25.00%,cer:75.00%
+ref:	सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन करायची आहे
+hyp:	सोनेवाडीला government industrial company open करायची आहे
+diff:	(सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन->सोनेवाडीला government industrial company open) करायची आहे
+blindtest_622813(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_623851(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_624062(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लेमन स्लश माझ्यासाठी घेशील
+hyp:	lemon slash माझ्यासाठी घेशील
+diff:	(लेमन स्लश->lemon slash) माझ्यासाठी घेशील
+blindtest_626871(nwords=5,cor=3,ins=0,del=1,sub=1) corr:60.00%,cer:40.00%
+ref:	आपण एक शून्य काढू या
+hyp:	आपण एक शून्य काढूया
+diff:	आपण एक शून्य (काढू या->काढूया)
+blindtest_627681(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	टीवीएस टायर्स चांगला धावते
+hyp:	tvs टायर्स चांगला धावते
+diff:	(टीवीएस->tvs) टायर्स चांगला धावते
+blindtest_632517(nwords=6,cor=4,ins=0,del=0,sub=2) corr:66.67%,cer:33.33%
+ref:	राम वारांगल इंस्टीट्यूट मध्ये शिक्षक आहे
+hyp:	राम warangal institute मध्ये शिक्षक आहे
+diff:	राम (वारांगल इंस्टीट्यूट->warangal institute) मध्ये शिक्षक आहे
+blindtest_632562(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_634309(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	desktop वर गाण्याची लायब्ररी आहे
+diff:	(डेस्कटॉप->desktop) वर गाण्याची (लायब्रेरी->लायब्ररी) आहे
+blindtest_634419(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता दोन केळी अजून उरली
+hyp:	आता दोन केळी अजून उरली
+diff:	आता दोन केळी अजून उरली
+blindtest_635834(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझा भाऊ माझा भाऊ
+hyp:	माझा भाऊ माझा भाऊ
+diff:	माझा भाऊ माझा भाऊ
+blindtest_636475(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता मी तुला पकडतो
+hyp:	आता मी तुला पकडतो
+diff:	आता मी तुला पकडतो
+blindtest_637471(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	लोकसत्ता वाचायला चांगलं आहे
+hyp:	लोकसत्ता वाचायला चांगलं आहे
+diff:	लोकसत्ता वाचायला चांगलं आहे
+blindtest_642087(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	ऐकायची तुम्हाला शनिवारचा दिवस होता
+hyp:	ऐकाची तुम्हाला शनिवारचा दिवस होता
+diff:	(ऐकायची->ऐकाची) तुम्हाला शनिवारचा दिवस होता
+blindtest_645949(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	फ्रांस पहिल्यापासून फायबर्स तयार करतात
+hyp:	france पहिल्यापासून fiber तयार करतात
+diff:	(फ्रांस->france) पहिल्यापासून (फायबर्स->fiber) तयार करतात
+blindtest_648621(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	बॅकवॉटर केरळ मध्ये आहे
+hyp:	backwater केरळमध्ये आहे
+diff:	(बॅकवॉटर केरळ मध्ये->backwater केरळमध्ये) आहे
+blindtest_649626(nwords=5,cor=2,ins=2,del=0,sub=3) corr:40.00%,cer:100.00%
+ref:	जनशताब्दी तंजावूर जाणारी रेल्वेगाडी आहे
+hyp:	जन शताब्दी तंजापूर जाणारी railway गाडी आहे
+diff:	(जनशताब्दी तंजावूर->जन शताब्दी तंजापूर) जाणारी (रेल्वेगाडी->railway गाडी) आहे
+blindtest_652203(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	desktop वर मागण्याची लायब्ररी आहे
+diff:	(डेस्कटॉप->desktop) वर (गाण्याची लायब्रेरी->मागण्याची लायब्ररी) आहे
+blindtest_652374(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	तू मला उलटि करशील
+hyp:	तू मला उलटी करशील
+diff:	तू मला (उलटि->उलटी) करशील
+blindtest_652766(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	मला सकाळी कल्पना होतीच
+hyp:	मला सकाळी कल्पना होती
+diff:	मला सकाळी कल्पना (होतीच->होती)
+blindtest_653984(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	इथे माझे मोजे आहेत
+hyp:	इथे माझे मोजे आहेत
+diff:	इथे माझे मोजे आहेत
+blindtest_660189(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	तू मला उलटि करशील
+hyp:	तू मला उलटी करशील
+diff:	तू मला (उलटि->उलटी) करशील
+blindtest_660326(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता तू मला पैसे दिले पाहिजेत
+hyp:	आता तू मला पैसे दिले पाहिजेत
+diff:	आता तू मला पैसे दिले पाहिजेत
+blindtest_660644(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_661710(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	पहाटेचे पाच वाजले होते
+hyp:	पाहाटेचे पाच वाजले होते
+diff:	(पहाटेचे->पाहाटेचे) पाच वाजले होते
+blindtest_663477(nwords=9,cor=8,ins=0,del=0,sub=1) corr:88.89%,cer:11.11%
+ref:	काय आहे ते काय आहे ते त्याला नाही सोंड
+hyp:	काय आहे ते काय आहे ते त्याला नाही sound
+diff:	काय आहे ते काय आहे ते त्याला नाही (सोंड->sound)
+blindtest_664129(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_667632(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	आता मला अंघोळ करायची आहे
+hyp:	आता मला आंघोळ करायची आहे
+diff:	आता मला (अंघोळ->आंघोळ) करायची आहे
+blindtest_668263(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	बघूया तू बरोबर सांगतेस का
+hyp:	बघूयात तू बरोबर सांगतेस का
+diff:	(बघूया->बघूयात) तू बरोबर सांगतेस का
+blindtest_669001(nwords=10,cor=8,ins=0,del=0,sub=2) corr:80.00%,cer:20.00%
+ref:	मला सांगा ड्रोन म्हणजे काय मला सांगा ड्रोन म्हणजे काय
+hyp:	मला सांगा loan म्हणजे काय मला सांगा loan म्हणजे काय
+diff:	मला सांगा (ड्रोन->loan) म्हणजे काय मला सांगा (ड्रोन->loan) म्हणजे काय
+blindtest_670601(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	अजून भरपूर वेळ आहे तुला
+hyp:	अजून भरपूर वेळ आहे तुला
+diff:	अजून भरपूर वेळ आहे तुला
+blindtest_671158(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कोण आहे कोण आहे
+hyp:	कोण आहे कोण आहे
+diff:	कोण आहे कोण आहे
+blindtest_671235(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst solution logistics market करतात
+diff:	(सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट->cst solution logistics market) करतात
+blindtest_671455(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	ऐकायची तुम्हाला शनिवारचा दिवस होता
+hyp:	ऐकाची तुम्हाला शनिवारचा दिवस होता
+diff:	(ऐकायची->ऐकाची) तुम्हाला शनिवारचा दिवस होता
+blindtest_676887(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	megha urgent email print कर
+diff:	(मेघा अर्जंट ईमेल प्रिंट->megha urgent email print) कर
+blindtest_677655(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लॅपटॉप कुरिअर मधून येतो
+hyp:	laptop courier मधून येतो
+diff:	(लॅपटॉप कुरिअर->laptop courier) मधून येतो
+blindtest_678148(nwords=2,cor=0,ins=0,del=0,sub=2) corr:0.00%,cer:100.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount घ्या
+diff:	(डिस्काऊंट द्या->discount घ्या)
+blindtest_681864(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	sainagar shirdi मध्ये आहे
+diff:	(साईनगर शिर्डी->sainagar shirdi) मध्ये आहे
+blindtest_686677(nwords=8,cor=2,ins=0,del=1,sub=5) corr:25.00%,cer:75.00%
+ref:	सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन करायची आहे
+hyp:	सोनेवाडीला garments industrial company open करायची आहे
+diff:	(सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन->सोनेवाडीला garments industrial company open) करायची आहे
+blindtest_691430(nwords=4,cor=2,ins=2,del=0,sub=2) corr:50.00%,cer:100.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	is no stranger name पूजा सांगशील
+diff:	(विष्णु सहस्त्रनाम->is no stranger name) पूजा सांगशील
+blindtest_696435(nwords=8,cor=2,ins=0,del=1,sub=5) corr:25.00%,cer:75.00%
+ref:	सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन करायची आहे
+hyp:	सोनेवाडीला garments industrial company open करायची आहे
+diff:	(सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन->सोनेवाडीला garments industrial company open) करायची आहे
+blindtest_698043(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_698284(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_698465(nwords=8,cor=8,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+hyp:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+diff:	विचार माझे जातात कुठे विचार माझे जातात कुठे
+blindtest_702201(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	पिझ्झा ची रेसिपी रिव्यू कर
+hyp:	pizza ची recipe review कर
+diff:	(पिझ्झा->pizza) ची (रेसिपी रिव्यू->recipe review) कर
+blindtest_704451(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	चित्रपटातील जुने गीत दाखवा
+hyp:	चित्रपटातील जुने गीत दाखवा
+diff:	चित्रपटातील जुने गीत दाखवा
+blindtest_704606(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझ्या काकाचे लग्न आहे
+hyp:	माझ्या काकाचे लग्न आहे
+diff:	माझ्या काकाचे लग्न आहे
+blindtest_705527(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	फ्रांस पहिल्यापासून फायबर्स तयार करतात
+hyp:	france पहिल्यापासून fiber तयार करतात
+diff:	(फ्रांस->france) पहिल्यापासून (फायबर्स->fiber) तयार करतात
+blindtest_708186(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	आणि आता मला शिंक येणार आहे
+hyp:	आणि आता मला sink येणार आहे
+diff:	आणि आता मला (शिंक->sink) येणार आहे
+blindtest_709045(nwords=5,cor=2,ins=2,del=0,sub=3) corr:40.00%,cer:100.00%
+ref:	जनशताब्दी तंजावूर जाणारी रेल्वेगाडी आहे
+hyp:	जन शताब्दी तंज्यापूर जाणारी railway गाडी आहे
+diff:	(जनशताब्दी तंजावूर->जन शताब्दी तंज्यापूर) जाणारी (रेल्वेगाडी->railway गाडी) आहे
+blindtest_709298(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	काही वेळ असाच जातो
+hyp:	काही वेळ असंच जातो
+diff:	काही वेळ (असाच->असंच) जातो
+blindtest_709703(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	कोणतीही टूअर्स जाऊ
+hyp:	कोणतीही tourers जाऊ
+diff:	कोणतीही (टूअर्स->tourers) जाऊ
+blindtest_709856(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	चित्रपटातील जुने गीत दाखवा
+hyp:	चित्रपटातील जुने गीत दाखवा
+diff:	चित्रपटातील जुने गीत दाखवा
+blindtest_712617(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_714080(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	इथून तिला काय काय
+hyp:	iti phone तिला काय काय
+diff:	(इथून->iti phone) तिला काय काय
+blindtest_715072(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst solutions logistics market करतात
+diff:	(सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट->cst solutions logistics market) करतात
+blindtest_715114(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	क्लाउड वर डेटा अपलोड करायचा
+hyp:	cloud वर data upload करायचा
+diff:	(क्लाउड->cloud) वर (डेटा अपलोड->data upload) करायचा
+blindtest_715507(nwords=7,cor=3,ins=0,del=2,sub=2) corr:42.86%,cer:57.14%
+ref:	खंडोबाची रथ यात्रा आळंदी ला आलेली आहे
+hyp:	खंडोबाची रथयात्रा आंदोलनाला आलेली आहे
+diff:	खंडोबाची (रथ यात्रा आळंदी ला->रथयात्रा आंदोलनाला) आलेली आहे
+blindtest_716206(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लॅपटॉप कुरिअर मधून येतो
+hyp:	laptop courier मधून येतो
+diff:	(लॅपटॉप कुरिअर->laptop courier) मधून येतो
+blindtest_716409(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	की आधीच्या तीस रात्रीसुद्धा
+hyp:	कि आधीच्या तीस रात्रीसुद्धा
+diff:	(की->कि) आधीच्या तीस रात्रीसुद्धा
+blindtest_717485(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+diff:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+blindtest_720039(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_720160(nwords=8,cor=6,ins=0,del=0,sub=2) corr:75.00%,cer:25.00%
+ref:	आणि आता मला माझ्या जबड्यांना चावताना ऐकायचे आहे
+hyp:	आणि आता मला माझ्या जबाबदाऱ्यांचा होताना ऐकायचे आहे
+diff:	आणि आता मला माझ्या (जबड्यांना चावताना->जबाबदाऱ्यांचा होताना) ऐकायचे आहे
+blindtest_720980(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	अरुणाचल मध्ये इटानगर आहे
+hyp:	अरुणाचल मध्ये ita नगर आहे
+diff:	अरुणाचल मध्ये (इटानगर->ita नगर) आहे
+blindtest_721398(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कोण आहे कोण आहे
+hyp:	कोण आहे कोण आहे
+diff:	कोण आहे कोण आहे
+blindtest_721728(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम उज्या सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम (पूजा->उज्या) सांगशील
+blindtest_724846(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst solutions logistics market करतात
+diff:	(सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट->cst solutions logistics market) करतात
+blindtest_726949(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	आता मला अंघोळ करायची आहे
+hyp:	आता मला आंघोळ करायची आहे
+diff:	आता मला (अंघोळ->आंघोळ) करायची आहे
+blindtest_727973(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कोण आहे मी कोण आहे मी
+hyp:	कोण आहे मी कोण आहे मी
+diff:	कोण आहे मी कोण आहे मी
+blindtest_728075(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मी तू आणि आपण सगळेच
+hyp:	मी तू आणि आपण सगळेच
+diff:	मी तू आणि आपण सगळेच
+blindtest_728336(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता मी तुला पकडतो
+hyp:	आता मी तुला पकडतो
+diff:	आता मी तुला पकडतो
+blindtest_730242(nwords=4,cor=2,ins=1,del=0,sub=2) corr:50.00%,cer:75.00%
+ref:	अरुणाचल मध्ये इटानगर आहे
+hyp:	अुणाचल मध्ये इट्टा नगर आहे
+diff:	(अरुणाचल->अुणाचल) मध्ये (इटानगर->इट्टा नगर) आहे
+blindtest_733470(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	ब्रेकिंग न्यूज ब्लॉक करावा
+hyp:	breaking news block करावा
+diff:	(ब्रेकिंग न्यूज ब्लॉक->breaking news block) करावा
+blindtest_734037(nwords=7,cor=6,ins=0,del=0,sub=1) corr:85.71%,cer:14.29%
+ref:	पोलिस पुन्हा येतील हे मला माहीत होते
+hyp:	police पुन्हा येतील हे मला माहीत होते
+diff:	(पोलिस->police) पुन्हा येतील हे मला माहीत होते
+blindtest_735912(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे काल निर्णय घेऊ
+diff:	इकडे (कालनिर्णय->काल निर्णय) घेऊ
+blindtest_736422(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	चायनगर शिर्डी मध्ये आहे
+diff:	(साईनगर->चायनगर) शिर्डी मध्ये आहे
+blindtest_736567(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे काल निर्णय घेऊ
+diff:	इकडे (कालनिर्णय->काल निर्णय) घेऊ
+blindtest_738414(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	वसंत राउटर सेटिंग्स करायला येतो
+hyp:	वसंत राउटर सेटिंग्स करायला येतो
+diff:	वसंत राउटर सेटिंग्स करायला येतो
+blindtest_742915(nwords=4,cor=1,ins=1,del=0,sub=3) corr:25.00%,cer:100.00%
+ref:	टीवीएस टायर्स चांगला धावते
+hyp:	tv या सायर चांगला दाखवते
+diff:	(टीवीएस टायर्स->tv या सायर) चांगला (धावते->दाखवते)
+blindtest_743511(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	गणिताचा तास सुरू झाला
+hyp:	गणिताचा तास सुरू झाला
+diff:	गणिताचा तास सुरू झाला
+blindtest_743693(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	चांगली युक्ती आहे ही
+hyp:	चांगली युक्ती आहे ही
+diff:	चांगली युक्ती आहे ही
+blindtest_744172(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	मुंबादेवी महाराष्ट्रातील प्रमुख देव आहे
+hyp:	मुंबईदेवी महाराष्ट्रातील प्रमुख देवी आहे
+diff:	(मुंबादेवी->मुंबईदेवी) महाराष्ट्रातील प्रमुख (देव->देवी) आहे
+blindtest_757038(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_757058(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	क्लाउड वर डेटा अपलोड करायचा
+hyp:	cloud word data upload करायचा
+diff:	(क्लाउड वर डेटा अपलोड->cloud word data upload) करायचा
+blindtest_759391(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला सकाळी कल्पना होतीच
+hyp:	मला सकाळी कल्पना होतीच
+diff:	मला सकाळी कल्पना होतीच
+blindtest_759666(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	अरुणाचल मध्ये इटानगर आहे
+hyp:	अरुणाचल मध्ये इथं नगर आहे
+diff:	अरुणाचल मध्ये (इटानगर->इथं नगर) आहे
+blindtest_759667(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	तुम्हाला माहीत आहे काय झाले असेल
+hyp:	तुम्हाला माहीत आहे काय झालं असेल
+diff:	तुम्हाला माहीत आहे काय (झाले->झालं) असेल
+blindtest_764362(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	आता हिरव्या खुश आहे
+hyp:	आता हिरव्या खुशा आहे
+diff:	आता हिरव्या (खुश->खुशा) आहे
+blindtest_767011(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	इथून पुढे शहर सुरू होतं
+hyp:	इथून पुढे शहर सुरू होतं
+diff:	इथून पुढे शहर सुरू होतं
+blindtest_767968(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_768645(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	आजचा प्रोफाईल चांगला आहे
+hyp:	आजचा profile चांगला आहे
+diff:	आजचा (प्रोफाईल->profile) चांगला आहे
+blindtest_770688(nwords=3,cor=3,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कुठल्या आवाजातील ऐकायचं
+hyp:	कुठल्या आवाजातील ऐकायचं
+diff:	कुठल्या आवाजातील ऐकायचं
+blindtest_772259(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	चित्रपटातील जुने गीत दाखवा
+hyp:	चित्रपटातील जुने गीत दाखवा
+diff:	चित्रपटातील जुने गीत दाखवा
+blindtest_773825(nwords=3,cor=3,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कुठल्या आवाजातील ऐकायचं
+hyp:	कुठल्या आवाजातील ऐकायचं
+diff:	कुठल्या आवाजातील ऐकायचं
+blindtest_777876(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता हिरव्या खुश आहे
+hyp:	आता हिरव्या खुश आहे
+diff:	आता हिरव्या खुश आहे
+blindtest_782670(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_784529(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता हिरव्या खुश आहे
+hyp:	आता हिरव्या खुश आहे
+diff:	आता हिरव्या खुश आहे
+blindtest_787593(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	आगगाड्या थांबव
+hyp:	आगाळ्यात थांबव
+diff:	(आगगाड्या->आगाळ्यात) थांबव
+blindtest_787795(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	आजचा प्रोफाईल चांगला आहे
+hyp:	आजचा profile चांगला आहे
+diff:	आजचा (प्रोफाईल->profile) चांगला आहे
+blindtest_788951(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	हे आंदोलन मध्ये सुरू झाले होते
+hyp:	हे andolan मध्ये सुरू झाले होते
+diff:	हे (आंदोलन->andolan) मध्ये सुरू झाले होते
+blindtest_791237(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	sainagar शरीरीमध्ये आहे
+diff:	(साईनगर शिर्डी मध्ये->sainagar शरीरीमध्ये) आहे
+blindtest_793033(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	गोदावरी मेसेजेस पाठव
+hyp:	गोदावरी messages पाठव
+diff:	गोदावरी (मेसेजेस->messages) पाठव
+blindtest_793786(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	इकडे कालनिर्णय घेऊ
+hyp:	इकडे call नाही घेऊ
+diff:	इकडे (कालनिर्णय->call नाही) घेऊ
+blindtest_796633(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_796723(nwords=4,cor=2,ins=0,del=1,sub=1) corr:50.00%,cer:50.00%
+ref:	दुपारी नांदेड ला जाऊ
+hyp:	दुपारी नांदेडला जाऊ
+diff:	दुपारी (नांदेड ला->नांदेडला) जाऊ
+blindtest_805251(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	फ्रांस पहिल्यापासून फायबर्स तयार करतात
+hyp:	france पहिल्यापासून fiber तयार करतात
+diff:	(फ्रांस->france) पहिल्यापासून (फायबर्स->fiber) तयार करतात
+blindtest_808130(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_809189(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझं नाव कोबोले आहे
+hyp:	माझं नाव कोबोले आहे
+diff:	माझं नाव कोबोले आहे
+blindtest_810365(nwords=7,cor=3,ins=0,del=1,sub=3) corr:42.86%,cer:57.14%
+ref:	अमेझॉन वर इंग्रजी बुक्स ऑफर मध्ये आहे
+hyp:	अमेझॉनवर इंग्रजी books offer मध्ये आहे
+diff:	(अमेझॉन वर->अमेझॉनवर) इंग्रजी (बुक्स ऑफर->books offer) मध्ये आहे
+blindtest_813509(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आईनं थोडा वेळ विचार केला
+hyp:	आईनं थोडा वेळ विचार केला
+diff:	आईनं थोडा वेळ विचार केला
+blindtest_815418(nwords=2,cor=0,ins=0,del=0,sub=2) corr:0.00%,cer:100.00%
+ref:	आगगाड्या थांबव
+hyp:	आघाडी थांबवू
+diff:	(आगगाड्या थांबव->आघाडी थांबवू)
+blindtest_815943(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	माझा मनोरंजनासाठी वापर करतात
+hyp:	माझा मनोरंजन साठी वापर करतात
+diff:	माझा (मनोरंजनासाठी->मनोरंजन साठी) वापर करतात
+blindtest_821643(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	मुंबादेवी महाराष्ट्रातील प्रमुख देव आहे
+hyp:	मुंबईदेवी महाराष्ट्रातील प्रमुख देव आहे
+diff:	(मुंबादेवी->मुंबईदेवी) महाराष्ट्रातील प्रमुख देव आहे
+blindtest_823064(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international कार आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल->bmw international) कार आहे
+blindtest_825178(nwords=5,cor=3,ins=1,del=0,sub=2) corr:60.00%,cer:60.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	desk top वर गाण्याची लायब्ररी आहे
+diff:	(डेस्कटॉप->desk top) वर गाण्याची (लायब्रेरी->लायब्ररी) आहे
+blindtest_828509(nwords=9,cor=8,ins=0,del=0,sub=1) corr:88.89%,cer:11.11%
+ref:	काय आहे ते काय आहे ते त्याला नाही सोंड
+hyp:	काय आहे ते काय आहे ते त्याला नाही sound
+diff:	काय आहे ते काय आहे ते त्याला नाही (सोंड->sound)
+blindtest_828873(nwords=10,cor=5,ins=0,del=0,sub=5) corr:50.00%,cer:50.00%
+ref:	किती सोपं दूर म्हणजे किती दूर दूर म्हणजे किती दूर
+hyp:	किती सोपा door म्हणजे किती door door म्हणजे किती door
+diff:	किती (सोपं दूर->सोपा door) म्हणजे किती (दूर दूर->door door) म्हणजे किती (दूर->door)
+blindtest_829173(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	megha urgent email print कर
+diff:	(मेघा अर्जंट ईमेल प्रिंट->megha urgent email print) कर
+blindtest_830743(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	हे आंदोलन मध्ये सुरू झाले होते
+hyp:	हे आंदोलन मध्ये सुरू झाले होते
+diff:	हे आंदोलन मध्ये सुरू झाले होते
+blindtest_830777(nwords=8,cor=7,ins=0,del=0,sub=1) corr:87.50%,cer:12.50%
+ref:	दोन चार सहा दहा पंधरा पाने तय्यार झाली
+hyp:	दोन चार सहा दहा पंधरा पाने तयार झाली
+diff:	दोन चार सहा दहा पंधरा पाने (तय्यार->तयार) झाली
+blindtest_833191(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनामापूजा सांगशील
+diff:	(विष्णु सहस्त्रनाम पूजा->विष्णू सहस्त्रनामापूजा) सांगशील
+blindtest_833817(nwords=10,cor=8,ins=0,del=0,sub=2) corr:80.00%,cer:20.00%
+ref:	मला सांगा ड्रोन म्हणजे काय मला सांगा ड्रोन म्हणजे काय
+hyp:	मला सांगा dream म्हणजे काय मला सांगा dream म्हणजे काय
+diff:	मला सांगा (ड्रोन->dream) म्हणजे काय मला सांगा (ड्रोन->dream) म्हणजे काय
+blindtest_837702(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	साई नगर शिर्डी मध्ये आहे
+diff:	(साईनगर->साई नगर) शिर्डी मध्ये आहे
+blindtest_840679(nwords=8,cor=8,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+hyp:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+diff:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+blindtest_843113(nwords=8,cor=8,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+hyp:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+diff:	इथे मला तुझी आणि तुझ्या मित्रांची आठवण होते
+blindtest_843729(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	ब्रेकिंग न्यूज ब्लॉक करावा
+hyp:	breaking news block करावा
+diff:	(ब्रेकिंग न्यूज ब्लॉक->breaking news block) करावा
+blindtest_844263(nwords=6,cor=3,ins=0,del=0,sub=3) corr:50.00%,cer:50.00%
+ref:	आठशे इंडियन कम्प्युटर वर वायरस आहे
+hyp:	आठशे indian computer वर virus आहे
+diff:	आठशे (इंडियन कम्प्युटर->indian computer) वर (वायरस->virus) आहे
+blindtest_845487(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	एक चमचा तुला एक मला
+hyp:	एक चमचात तुला एक मला
+diff:	एक (चमचा->चमचात) तुला एक मला
+blindtest_846037(nwords=8,cor=2,ins=0,del=1,sub=5) corr:25.00%,cer:75.00%
+ref:	सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन करायची आहे
+hyp:	सोनेवाडीला garment industrial company open करायची आहे
+diff:	(सोनेवाडी ला गारमेंट्स इंडस्ट्रियल कंपनी ओपन->सोनेवाडीला garment industrial company open) करायची आहे
+blindtest_850205(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	साई नगर शिर्डी मध्ये आहे
+diff:	(साईनगर->साई नगर) शिर्डी मध्ये आहे
+blindtest_853543(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_853688(nwords=3,cor=2,ins=1,del=0,sub=1) corr:66.67%,cer:66.67%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी बरोडा जाते
+diff:	(रेल्वेगाडी->railway गाडी) बरोडा जाते
+blindtest_854721(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	टीवीएस टायर्स चांगला धावते
+hyp:	tvs टायर चांगला धावते
+diff:	(टीवीएस टायर्स->tvs टायर) चांगला धावते
+blindtest_858087(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कुंभ आणि कन्या राशी आहे
+hyp:	कुंभ आणि कन्या राशी आहे
+diff:	कुंभ आणि कन्या राशी आहे
+blindtest_858863(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	पिझ्झा ची रेसिपी रिव्यू कर
+hyp:	pizza ची recipe review कर
+diff:	(पिझ्झा->pizza) ची (रेसिपी रिव्यू->recipe review) कर
+blindtest_862718(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	महाशिवरात्री महोत्सवात कोइंबतूर शहरात साजरा करतात
+diff:	महाशिवरात्री (महोत्सव->महोत्सवात) कोइंबतूर शहरात साजरा करतात
+blindtest_863293(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	ऑडी चा इमेज दाखवा
+hyp:	ऑडीचा image दाखवा
+diff:	(ऑडी चा इमेज->ऑडीचा image) दाखवा
+blindtest_863440(nwords=5,cor=3,ins=1,del=0,sub=2) corr:60.00%,cer:60.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	desk top वर गाण्याची लायब्ररी आहे
+diff:	(डेस्कटॉप->desk top) वर गाण्याची (लायब्रेरी->लायब्ररी) आहे
+blindtest_863860(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	वसंत राउटर सेटिंग्स करायला येतो
+hyp:	वसंत router settings करायला येतो
+diff:	वसंत (राउटर सेटिंग्स->router settings) करायला येतो
+blindtest_865326(nwords=7,cor=4,ins=0,del=0,sub=3) corr:57.14%,cer:42.86%
+ref:	अमेझॉन वर इंग्रजी बुक्स ऑफर मध्ये आहे
+hyp:	amazon वर इंग्रजी books offer मध्ये आहे
+diff:	(अमेझॉन->amazon) वर इंग्रजी (बुक्स ऑफर->books offer) मध्ये आहे
+blindtest_865357(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	देशपांडे चर्चगेट ला उतरला
+hyp:	देशपांडेंत चर्चगेटला उतरला
+diff:	(देशपांडे चर्चगेट ला->देशपांडेंत चर्चगेटला) उतरला
+blindtest_866009(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst solutions logistics market करतात
+diff:	(सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट->cst solutions logistics market) करतात
+blindtest_867570(nwords=10,cor=8,ins=0,del=0,sub=2) corr:80.00%,cer:20.00%
+ref:	मला सांगा ड्रोन म्हणजे काय मला सांगा ड्रोन म्हणजे काय
+hyp:	मला सांगा drone म्हणजे काय मला सांगा drone म्हणजे काय
+diff:	मला सांगा (ड्रोन->drone) म्हणजे काय मला सांगा (ड्रोन->drone) म्हणजे काय
+blindtest_871323(nwords=4,cor=2,ins=0,del=1,sub=1) corr:50.00%,cer:50.00%
+ref:	दुपारी नांदेड ला जाऊ
+hyp:	दुपारी नांदेडला जाऊ
+diff:	दुपारी (नांदेड ला->नांदेडला) जाऊ
+blindtest_874568(nwords=4,cor=2,ins=0,del=0,sub=2) corr:50.00%,cer:50.00%
+ref:	लेमन स्लश माझ्यासाठी घेशील
+hyp:	lemon squash माझ्यासाठी घेशील
+diff:	(लेमन स्लश->lemon squash) माझ्यासाठी घेशील
+blindtest_874950(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	पहाटेचे पाच वाजले होते
+hyp:	पाहाटेची पाच वाजले होते
+diff:	(पहाटेचे->पाहाटेची) पाच वाजले होते
+blindtest_875969(nwords=6,cor=5,ins=1,del=0,sub=1) corr:83.33%,cer:33.33%
+ref:	तुम्हाला माहीत आहे काय झाले असेल
+hyp:	तू मला माहीत आहे काय झाले असेल
+diff:	(तुम्हाला->तू मला) माहीत आहे काय झाले असेल
+blindtest_882557(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	लोकसत्ता वाचायला चांगलं आहे
+hyp:	लोकसत्ता वाचायला चांगलं आहे
+diff:	लोकसत्ता वाचायला चांगलं आहे
+blindtest_882876(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आणि तुला एक दोन तीन
+hyp:	आणि तुला एक दोन तीन
+diff:	आणि तुला एक दोन तीन
+blindtest_883205(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_884373(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	हे एक जुनं घर आहे
+hyp:	हे एक जुनं घर आहे
+diff:	हे एक जुनं घर आहे
+blindtest_885061(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_885428(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बॅकवॉटर केरळ मध्ये आहे
+hyp:	back order केरळमध्ये आहे
+diff:	(बॅकवॉटर केरळ मध्ये->back order केरळमध्ये) आहे
+blindtest_885461(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता आवाज जरा कमी झाला होता
+hyp:	आता आवाज जरा कमी झाला होता
+diff:	आता आवाज जरा कमी झाला होता
+blindtest_885926(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	megha urgent email print कर
+diff:	(मेघा अर्जंट ईमेल प्रिंट->megha urgent email print) कर
+blindtest_886204(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_889013(nwords=5,cor=1,ins=1,del=0,sub=4) corr:20.00%,cer:100.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	मी गा urgent email print कर
+diff:	(मेघा अर्जंट ईमेल प्रिंट->मी गा urgent email print) कर
+blindtest_889279(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	वसंत राउटर सेटिंग्स करायला येतो
+hyp:	वसंत राऊटर सेटिंग्स करायला येतो
+diff:	वसंत (राउटर->राऊटर) सेटिंग्स करायला येतो
+blindtest_890147(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	नंतर जोरात पाऊस सुरू झाला
+hyp:	नंतर जोरात पाऊस सुरू झाला
+diff:	नंतर जोरात पाऊस सुरू झाला
+blindtest_890999(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_891078(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझे दहा मित्र आहेत
+hyp:	माझे दहा मित्र आहेत
+diff:	माझे दहा मित्र आहेत
+blindtest_892018(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	आल्यावर करतो तुला मदत
+hyp:	आल्यावर करतोय तुला मदत
+diff:	आल्यावर (करतो->करतोय) तुला मदत
+blindtest_892784(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst solution logistics market करतात
+diff:	(सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट->cst solution logistics market) करतात
+blindtest_892936(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	बॅकवॉटर केरळ मध्ये आहे
+hyp:	backwater केरळमध्ये आहे
+diff:	(बॅकवॉटर केरळ मध्ये->backwater केरळमध्ये) आहे
+blindtest_895185(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	डीएलएफ ची चाळीस स्टॉक घेऊ
+hyp:	dlf ची चाळीस stock घेऊ
+diff:	(डीएलएफ->dlf) ची चाळीस (स्टॉक->stock) घेऊ
+blindtest_895398(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता तू घरी परत जा
+hyp:	आता तू घरी परत जा
+diff:	आता तू घरी परत जा
+blindtest_896882(nwords=6,cor=5,ins=2,del=0,sub=1) corr:83.33%,cer:50.00%
+ref:	तुम्हाला माहीत आहे काय झाले असेल
+hyp:	तुम्हाला माहित आहे काय झाले आहे असं असेल
+diff:	तुम्हाला (माहीत->माहित) आहे काय झाले (*->आहे असं) असेल
+blindtest_898220(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_898937(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	तू मला उलटि करशील
+hyp:	तू मला उलटी करशील
+diff:	तू मला (उलटि->उलटी) करशील
+blindtest_901586(nwords=9,cor=9,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझं नाव आहे देवी आणि हे साल आहे इ
+hyp:	माझं नाव आहे देवी आणि हे साल आहे इ
+diff:	माझं नाव आहे देवी आणि हे साल आहे इ
+blindtest_906068(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	बघूया तू बरोबर सांगतेस का
+hyp:	बघूया तू बरोबर सांगतेय का
+diff:	बघूया तू बरोबर (सांगतेस->सांगतेय) का
+blindtest_906580(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	megha urgent email print कर
+diff:	(मेघा अर्जंट ईमेल प्रिंट->megha urgent email print) कर
+blindtest_907064(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता तू मला पैसे दिले पाहिजेत
+hyp:	आता तू मला पैसे दिले पाहिजेत
+diff:	आता तू मला पैसे दिले पाहिजेत
+blindtest_907882(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	आता मला अंघोळ करायची आहे
+hyp:	आता मला आंघोळ करायची आहे
+diff:	आता मला (अंघोळ->आंघोळ) करायची आहे
+blindtest_908737(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_909060(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	इथून पुढे शहर सुरू होतं
+hyp:	इथून पुढे शहर सुरू होतं
+diff:	इथून पुढे शहर सुरू होतं
+blindtest_909290(nwords=8,cor=6,ins=0,del=0,sub=2) corr:75.00%,cer:25.00%
+ref:	आणि आता मला माझ्या जबड्यांना चावताना ऐकायचे आहे
+hyp:	आणि आता मला माझ्या जबाबदाऱ्यांना सावताना ऐकायचे आहे
+diff:	आणि आता मला माझ्या (जबड्यांना चावताना->जबाबदाऱ्यांना सावताना) ऐकायचे आहे
+blindtest_911500(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_911914(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_912838(nwords=5,cor=1,ins=1,del=0,sub=4) corr:20.00%,cer:100.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	मी खा urgent email print कर
+diff:	(मेघा अर्जंट ईमेल प्रिंट->मी खा urgent email print) कर
+blindtest_916057(nwords=7,cor=4,ins=0,del=0,sub=3) corr:57.14%,cer:42.86%
+ref:	अमेझॉन वर इंग्रजी बुक्स ऑफर मध्ये आहे
+hyp:	amazon वर इंग्रजी books offer मध्ये आहे
+diff:	(अमेझॉन->amazon) वर इंग्रजी (बुक्स ऑफर->books offer) मध्ये आहे
+blindtest_917628(nwords=3,cor=2,ins=0,del=0,sub=1) corr:66.67%,cer:33.33%
+ref:	काही कार मध्ये
+hyp:	काही car मध्ये
+diff:	काही (कार->car) मध्ये
+blindtest_920457(nwords=4,cor=3,ins=0,del=0,sub=1) corr:75.00%,cer:25.00%
+ref:	विष्णु सहस्त्रनाम पूजा सांगशील
+hyp:	विष्णू सहस्त्रनाम पूजा सांगशील
+diff:	(विष्णु->विष्णू) सहस्त्रनाम पूजा सांगशील
+blindtest_922873(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	चित्रपटातील जुने गीत दाखवा
+hyp:	चित्रपटातील जुने गीत दाखवा
+diff:	चित्रपटातील जुने गीत दाखवा
+blindtest_923912(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	पण आज मी तुला पाहिलं
+hyp:	पण आज मी तुला पाहिलं
+diff:	पण आज मी तुला पाहिलं
+blindtest_924874(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst సెల्युशन्स लॉजिस्टिक्स मार्केट करतात
+diff:	(सीएसटी सोल्यूशन्स->cst సెల्युशन्स) लॉजिस्टिक्स मार्केट करतात
+blindtest_925771(nwords=10,cor=9,ins=0,del=0,sub=1) corr:90.00%,cer:10.00%
+ref:	म्हणजेच दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+hyp:	म्हणजे दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+diff:	(म्हणजेच->म्हणजे) दहा अधिक दहा अधिक दहा अधिक दहा अधिक दहा
+blindtest_927616(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला पुन्हा उशीर झाला
+hyp:	मला पुन्हा उशीर झाला
+diff:	मला पुन्हा उशीर झाला
+blindtest_928467(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	यूट्यूब चेनल सबस्क्राईब कर
+hyp:	youtube channel subscribe कर
+diff:	(यूट्यूब चेनल सबस्क्राईब->youtube channel subscribe) कर
+blindtest_929568(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_931281(nwords=5,cor=2,ins=1,del=0,sub=3) corr:40.00%,cer:80.00%
+ref:	फ्रांस पहिल्यापासून फायबर्स तयार करतात
+hyp:	france पहिल्या पासून fiber तयार करतात
+diff:	(फ्रांस पहिल्यापासून फायबर्स->france पहिल्या पासून fiber) तयार करतात
+blindtest_933874(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	ब्रेकिंग न्यूज ब्लॉक करावा
+hyp:	breaking news block करावा
+diff:	(ब्रेकिंग न्यूज ब्लॉक->breaking news block) करावा
+blindtest_934436(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	ऐकायची तुम्हाला शनिवारचा दिवस होता
+hyp:	ऐकाची तुम्हाला शनिवारचा दिवस होता
+diff:	(ऐकायची->ऐकाची) तुम्हाला शनिवारचा दिवस होता
+blindtest_936286(nwords=3,cor=1,ins=1,del=0,sub=2) corr:33.33%,cer:100.00%
+ref:	रेल्वेगाडी बरोडा जाते
+hyp:	railway गाडी बोरोडा जाते
+diff:	(रेल्वेगाडी बरोडा->railway गाडी बोरोडा) जाते
+blindtest_937004(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	अरुणाचल मध्ये इटानगर आहे
+hyp:	अरुणाचल मध्ये it नगर आहे
+diff:	अरुणाचल मध्ये (इटानगर->it नगर) आहे
+blindtest_940456(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	आणि आता मला शिंक येणार आहे
+hyp:	आणि आता मला singing येणार आहे
+diff:	आणि आता मला (शिंक->singing) येणार आहे
+blindtest_941135(nwords=2,cor=0,ins=1,del=0,sub=2) corr:0.00%,cer:150.00%
+ref:	आगगाड्या थांबव
+hyp:	आग गाड्या थांबवू
+diff:	(आगगाड्या थांबव->आग गाड्या थांबवू)
+blindtest_941557(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कोण आहे मी कोण आहे मी
+hyp:	कोण आहे मी कोण आहे मी
+diff:	कोण आहे मी कोण आहे मी
+blindtest_944404(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst సెల्युशन्स लॉजिस्टिक्स मार्केट करतात
+diff:	(सीएसटी सोल्यूशन्स->cst సెల्युशन्स) लॉजिस्टिक्स मार्केट करतात
+blindtest_945304(nwords=10,cor=9,ins=0,del=0,sub=1) corr:90.00%,cer:10.00%
+ref:	या वर्षी मला वर्षे पूर्ण होतील म्हणजे माझा जन्म झाला
+hyp:	या वर्षी मला वर्ष पूर्ण होतील म्हणजे माझा जन्म झाला
+diff:	या वर्षी मला (वर्षे->वर्ष) पूर्ण होतील म्हणजे माझा जन्म झाला
+blindtest_947869(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला आता गेले पाहिजे
+hyp:	मला आता गेले पाहिजे
+diff:	मला आता गेले पाहिजे
+blindtest_955402(nwords=2,cor=1,ins=0,del=0,sub=1) corr:50.00%,cer:50.00%
+ref:	डिस्काऊंट द्या
+hyp:	discount द्या
+diff:	(डिस्काऊंट->discount) द्या
+blindtest_956359(nwords=7,cor=4,ins=0,del=0,sub=3) corr:57.14%,cer:42.86%
+ref:	अमेझॉन वर इंग्रजी बुक्स ऑफर मध्ये आहे
+hyp:	amazon वर इंग्रजी book offer मध्ये आहे
+diff:	(अमेझॉन->amazon) वर इंग्रजी (बुक्स ऑफर->book offer) मध्ये आहे
+blindtest_957772(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	नीलूने थोडा वेळ विचार केला
+hyp:	निलूने थोडा वेळ विचार केला
+diff:	(नीलूने->निलूने) थोडा वेळ विचार केला
+blindtest_958816(nwords=5,cor=2,ins=0,del=0,sub=3) corr:40.00%,cer:60.00%
+ref:	वसंत राउटर सेटिंग्स करायला येतो
+hyp:	वसंतराव outdoor setting करायला येतो
+diff:	(वसंत राउटर सेटिंग्स->वसंतराव outdoor setting) करायला येतो
+blindtest_958921(nwords=3,cor=3,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कुठल्या आवाजातील ऐकायचं
+hyp:	कुठल्या आवाजातील ऐकायचं
+diff:	कुठल्या आवाजातील ऐकायचं
+blindtest_960900(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	ब्रेकिंग न्यूज ब्लॉक करावा
+hyp:	breaking news block करावा
+diff:	(ब्रेकिंग न्यूज ब्लॉक->breaking news block) करावा
+blindtest_965914(nwords=5,cor=3,ins=0,del=0,sub=2) corr:60.00%,cer:40.00%
+ref:	सीएसटी सोल्यूशन्स लॉजिस्टिक्स मार्केट करतात
+hyp:	cst సెల्युशन्स लॉजिस्टिक्स मार्केट करतात
+diff:	(सीएसटी सोल्यूशन्स->cst సెల्युशन्स) लॉजिस्टिक्स मार्केट करतात
+blindtest_966866(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझे दहा मित्र आहेत
+hyp:	माझे दहा मित्र आहेत
+diff:	माझे दहा मित्र आहेत
+blindtest_967010(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	अरुणाचल मध्ये इटानगर आहे
+hyp:	अरुणाचल मध्ये it नगर आहे
+diff:	अरुणाचल मध्ये (इटानगर->it नगर) आहे
+blindtest_967520(nwords=10,cor=8,ins=0,del=0,sub=2) corr:80.00%,cer:20.00%
+ref:	मला सांगा ड्रोन म्हणजे काय मला सांगा ड्रोन म्हणजे काय
+hyp:	मला सांगा drone म्हणजे काय मला सांगा drone म्हणजे काय
+diff:	मला सांगा (ड्रोन->drone) म्हणजे काय मला सांगा (ड्रोन->drone) म्हणजे काय
+blindtest_970555(nwords=5,cor=3,ins=1,del=0,sub=2) corr:60.00%,cer:60.00%
+ref:	डेस्कटॉप वर गाण्याची लायब्रेरी आहे
+hyp:	desk top वर गाण्याची लायब्ररी आहे
+diff:	(डेस्कटॉप->desk top) वर गाण्याची (लायब्रेरी->लायब्ररी) आहे
+blindtest_970932(nwords=6,cor=6,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता तू मला पैसे दिले पाहिजेत
+hyp:	आता तू मला पैसे दिले पाहिजेत
+diff:	आता तू मला पैसे दिले पाहिजेत
+blindtest_973108(nwords=5,cor=1,ins=0,del=0,sub=4) corr:20.00%,cer:80.00%
+ref:	मेघा अर्जंट ईमेल प्रिंट कर
+hyp:	megha urgent email print कर
+diff:	(मेघा अर्जंट ईमेल प्रिंट->megha urgent email print) कर
+blindtest_973225(nwords=4,cor=1,ins=0,del=1,sub=2) corr:25.00%,cer:75.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	चायनगर शिर्डीमध्ये आहे
+diff:	(साईनगर शिर्डी मध्ये->चायनगर शिर्डीमध्ये) आहे
+blindtest_973403(nwords=5,cor=2,ins=1,del=0,sub=3) corr:40.00%,cer:80.00%
+ref:	फ्रांस पहिल्यापासून फायबर्स तयार करतात
+hyp:	france पहिल्या पासून fiber तयार करतात
+diff:	(फ्रांस पहिल्यापासून फायबर्स->france पहिल्या पासून fiber) तयार करतात
+blindtest_973655(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	बीएमडब्ल्यु इंटरनॅशनल कार आहे
+hyp:	bmw international car आहे
+diff:	(बीएमडब्ल्यु इंटरनॅशनल कार->bmw international car) आहे
+blindtest_973981(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	आणि आता मला शिंक येणार आहे
+hyp:	आणि आता मला sink येणार आहे
+diff:	आणि आता मला (शिंक->sink) येणार आहे
+blindtest_979072(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला पुन्हा उशीर झाला
+hyp:	मला पुन्हा उशीर झाला
+diff:	मला पुन्हा उशीर झाला
+blindtest_979290(nwords=5,cor=5,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	मला तुम्हाला मदत करायची आहे
+hyp:	मला तुम्हाला मदत करायची आहे
+diff:	मला तुम्हाला मदत करायची आहे
+blindtest_980240(nwords=6,cor=5,ins=0,del=0,sub=1) corr:83.33%,cer:16.67%
+ref:	महाशिवरात्री महोत्सव कोइंबतूर शहरात साजरा करतात
+hyp:	महाशिवरात्री महोत्सव कोइम्बतूर शहरात साजरा करतात
+diff:	महाशिवरात्री महोत्सव (कोइंबतूर->कोइम्बतूर) शहरात साजरा करतात
+blindtest_980426(nwords=5,cor=4,ins=0,del=0,sub=1) corr:80.00%,cer:20.00%
+ref:	वसंत राउटर सेटिंग्स करायला येतो
+hyp:	वसंत राउटर setting करायला येतो
+diff:	वसंत राउटर (सेटिंग्स->setting) करायला येतो
+blindtest_982618(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	सॅमसंग मोबाईल वर फोटोझ कम्पेअर कर
+hyp:	samsung mobile वर photos compare कर
+diff:	(सॅमसंग मोबाईल->samsung mobile) वर (फोटोझ कम्पेअर->photos compare) कर
+blindtest_984857(nwords=3,cor=3,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	कुठल्या आवाजातील ऐकायचं
+hyp:	कुठल्या आवाजातील ऐकायचं
+diff:	कुठल्या आवाजातील ऐकायचं
+blindtest_988551(nwords=6,cor=2,ins=0,del=0,sub=4) corr:33.33%,cer:66.67%
+ref:	हिंदुस्तान सिन्थेटिक्स ची फॅब्रिक्स लाइट असते
+hyp:	हिंदुस्थान synthetic ची fabrics light असते
+diff:	(हिंदुस्तान सिन्थेटिक्स->हिंदुस्थान synthetic) ची (फॅब्रिक्स लाइट->fabrics light) असते
+blindtest_990195(nwords=4,cor=3,ins=1,del=0,sub=1) corr:75.00%,cer:50.00%
+ref:	साईनगर शिर्डी मध्ये आहे
+hyp:	साई नगर शिर्डी मध्ये आहे
+diff:	(साईनगर->साई नगर) शिर्डी मध्ये आहे
+blindtest_991688(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	आता मी तुला पकडतो
+hyp:	आता मी तुला पकडतो
+diff:	आता मी तुला पकडतो
+blindtest_992439(nwords=4,cor=1,ins=0,del=0,sub=3) corr:25.00%,cer:75.00%
+ref:	ब्रेकिंग न्यूज ब्लॉक करावा
+hyp:	breaking news block करावा
+diff:	(ब्रेकिंग न्यूज ब्लॉक->breaking news block) करावा
+blindtest_992687(nwords=3,cor=1,ins=0,del=0,sub=2) corr:33.33%,cer:66.67%
+ref:	एप डाऊनलोड कर
+hyp:	app download कर
+diff:	(एप डाऊनलोड->app download) कर
+blindtest_993605(nwords=5,cor=3,ins=1,del=0,sub=2) corr:60.00%,cer:60.00%
+ref:	फ्रांस पहिल्यापासून फायबर्स तयार करतात
+hyp:	france पहिल्यापासून five star तयार करतात
+diff:	(फ्रांस->france) पहिल्यापासून (फायबर्स->five star) तयार करतात
+blindtest_996036(nwords=4,cor=4,ins=0,del=0,sub=0) corr:100.00%,cer:0.00%
+ref:	माझं नाव कोबोले आहे
+hyp:	माझं नाव कोबोले आहे
+diff:	माझं नाव कोबोले आहे
+blindtest_996297(nwords=10,cor=9,ins=0,del=0,sub=1) corr:90.00%,cer:10.00%
+ref:	या वर्षी मला वर्षे पूर्ण होतील म्हणजे माझा जन्म झाला
+hyp:	या वर्षी मला वर्ष पूर्ण होतील म्हणजे माझा जन्म झाला
+diff:	या वर्षी मला (वर्षे->वर्ष) पूर्ण होतील म्हणजे माझा जन्म झाला
+
+%WER 35.28 [ 1075 / 3047, 85 ins, 41 del, 949 sub ]
+%SER 73.74 [ 469 / 636 ]
+Scored 636 sentences, 0 not present in hyp.

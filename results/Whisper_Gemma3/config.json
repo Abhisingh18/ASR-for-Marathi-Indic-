@@ -1,0 +1,13 @@
+{
+    "encoder_name": "whisper",
+    "encoder_path": "kannada_data/encoders/whisper/large-v3.pt",
+    "encoder_dim": 1280,
+    "llm_name": "gemma-3-4b-it",
+    "llm_dim": 2560,
+    "lora_r": 8,
+    "lora_alpha": 32,
+    "prompt_style": "gemma2",
+    "input_type": "mel",
+    "mel_size": 128,
+    "normalize": true
+}

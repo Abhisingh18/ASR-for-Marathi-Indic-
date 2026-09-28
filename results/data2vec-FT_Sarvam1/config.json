@@ -1,0 +1,12 @@
+{
+    "encoder_name": "data2vec_aqc",
+    "encoder_path": "marathi_data/encoders/SPRING_INX_data2vec_aqc_Marathi.pt",
+    "encoder_dim": 1024,
+    "llm_name": "sarvam-1",
+    "llm_dim": 2048,
+    "lora_r": 8,
+    "lora_alpha": 32,
+    "prompt_style": "vicuna",
+    "input_type": "raw",
+    "normalize": true
+}

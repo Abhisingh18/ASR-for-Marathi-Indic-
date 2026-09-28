@@ -1,0 +1,12 @@
+{
+    "encoder_name": "data2vec_aqc",
+    "encoder_path": "kannada_data/encoders/SPRING_INX_data2vec_aqc_SSL.pt",
+    "encoder_dim": 1024,
+    "llm_name": "gemma-3-4b-it",
+    "llm_dim": 2560,
+    "lora_r": 8,
+    "lora_alpha": 32,
+    "prompt_style": "gemma2",
+    "input_type": "raw",
+    "normalize": true
+}
