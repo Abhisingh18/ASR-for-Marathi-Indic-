@@ -129,3 +129,9 @@ Full walkthrough: [`docs/REPRODUCE.md`](docs/REPRODUCE.md)
 | [`docs/ENVIRONMENT.md`](docs/ENVIRONMENT.md) | Software/hardware environment |
 | [`docs/REPRODUCE.md`](docs/REPRODUCE.md) | End-to-end reproduction steps |
 | [`docs/testsets/`](docs/testsets/) | One page per test set |
+
+## 📄 License & acknowledgements
+
+MIT licensed — see [`LICENSE`](LICENSE). This work builds on the
+[SLAM-LLM](https://github.com/ddlBoJack/SLAM-LLM) framework and SPRING-INX encoder checkpoints;
+full credits in [`docs/ACKNOWLEDGEMENTS.md`](docs/ACKNOWLEDGEMENTS.md).
