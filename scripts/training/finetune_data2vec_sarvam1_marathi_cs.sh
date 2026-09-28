@@ -78,3 +78,61 @@ grad_accum=$((8 / n_gpus))
 
 cd "$SLAM_DIR"
 code_dir=examples/asr_librispeech
+
+# ---------------- pre-flight checks (fail early, before any GPU work) ----------------
+command -v deepspeed >/dev/null || { echo "[FATAL] 'deepspeed' not found on PATH (set ENV_BIN to the env's bin dir)" >&2; exit 1; }
+py_slam=$(python -c 'import slam_llm; print(slam_llm.__file__)')
+case "$py_slam" in
+    "$SLAM_DIR"/*) echo "[check] slam_llm from: $py_slam" ;;
+    *) echo "[FATAL] slam_llm is imported from $py_slam, not from \$SLAM_DIR=$SLAM_DIR -- refusing to run the wrong code" >&2; exit 1 ;;
+esac
+python -c "import fairseq" 2>/dev/null || { echo "[FATAL] cannot import fairseq (FAIRSEQ_DIR=$FAIRSEQ_DIR)" >&2; exit 1; }
+[ -x "$CUDA_HOME/bin/nvcc" ] || echo "[WARN] no nvcc at $CUDA_HOME/bin -- DeepSpeed's fused AdamW may fail to build (set CUDA_HOME to a CUDA 12.x toolkit)"
+[ -f "$ENCODER_PATH" ] || { echo "[FATAL] encoder checkpoint not found: $ENCODER_PATH" >&2; exit 1; }
+[ -f "$LLM_PATH/config.json" ] || { echo "[FATAL] Gemma-3-4B-IT not found at LLM_PATH=$LLM_PATH (need config.json + weights)" >&2; exit 1; }
+[ -f "$TRAIN_JSONL" ] && [ -f "$DEV_JSONL" ] || { echo "[FATAL] train/dev jsonl not found ($TRAIN_JSONL / $DEV_JSONL)" >&2; exit 1; }
+missing=$( (head -2 "$TRAIN_JSONL"; shuf -n 200 "$TRAIN_JSONL"; shuf -n 100 "$DEV_JSONL") | python -c "
+import sys, json, os
+bad = [json.loads(l)['source'] for l in sys.stdin if not os.path.isfile(json.loads(l)['source'])]
+print(len(bad), bad[0] if bad else '')")
+case "$missing" in
+    "0 "*) echo "[check] sampled 300 train/dev audio paths: all exist" ;;
+    *) echo "[FATAL] audio missing for sampled jsonl rows (count + first): $missing -- was the audio directory copied to the same path?" >&2; exit 1 ;;
+esac
+
+# the chosen GPUs must be free and big enough (protects other people's jobs and catches a CUDA-vs-nvidia-smi index mix-up)
+if [ "${DRYRUN:-0}" != "1" ] && [ "${FORCE:-0}" != "1" ]; then
+    CUDA_VISIBLE_DEVICES=$GPU_INCLUDE python - <<'EOF'
+import sys, torch
+n = torch.cuda.device_count()
+ok = True
+for i in range(n):
+    free, total = torch.cuda.mem_get_info(i)
+    name = torch.cuda.get_device_name(i)
+    print(f"[gpu-check] cuda:{i} {name}  free {free/2**30:.1f} / {total/2**30:.1f} GiB")
+    if total < 40 * 2**30 or free < 40 * 2**30:
+        ok = False
+if not ok:
+    sys.exit("[FATAL] a selected GPU is busy or smaller than 40 GB (FORCE=1 to override). Check `nvidia-smi` and GPU_INCLUDE.")
+EOF
+fi
+
+# ---------------- wandb ----------------
+USE_WANDB=${USE_WANDB:-auto}
+if [ "$USE_WANDB" = "auto" ]; then
+    if [ -n "${WANDB_API_KEY:-}" ] || grep -q "api.wandb.ai" "$HOME/.netrc" 2>/dev/null; then
+        USE_WANDB=true
+        # logged in, but can this machine reach wandb's server? (any HTTP reply counts; a timeout would otherwise crash wandb.init)
+        if curl -sS -m 8 -o /dev/null https://api.wandb.ai 2>/dev/null; then
+            echo "[wandb] logged in + server reachable -> online logging to $WANDB_ENTITY/$WANDB_PROJECT"
+        else
+            export WANDB_MODE=offline
+            echo "[wandb] logged in but api.wandb.ai is NOT reachable from here -> WANDB_MODE=offline. Curves are saved under \${WANDB_DIR:-OUTPUT_DIR}/wandb; upload later from a machine with internet: wandb sync <that dir>/wandb/offline-run-*"
+        fi
+    else
+        USE_WANDB=false
+        echo "[wandb] not logged in on this machine -> wandb OFF. Run 'wandb login' (or export WANDB_API_KEY=...) and re-run to get the curves; or USE_WANDB=true WANDB_MODE=offline to record locally and sync later."
+    fi
+else
+    echo "[wandb] USE_WANDB=$USE_WANDB (forced)  WANDB_MODE=${WANDB_MODE:-online}"
+fi
