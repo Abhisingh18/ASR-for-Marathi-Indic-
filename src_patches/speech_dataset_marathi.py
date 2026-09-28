@@ -272,3 +272,99 @@ class SpeechDatasetJsonl(torch.utils.data.Dataset):
             prompt_ids = torch.tensor(prompt_ids, dtype=torch.int64)
             example_ids = torch.cat((audio_pseudo, prompt_ids))  # [audio,prompt]
             example_mask = example_ids.ge(-1)  # [True,True]
+
+            return {
+                "input_ids": example_ids,
+                "attention_mask": example_mask,
+                "audio": audio_raw if self.input_type == "raw" else None,
+                "audio_mel": audio_mel if self.input_type == "mel" else None,
+                "audio_length": audio_length,
+                "key": key,
+                "target": target,
+                "prompt_length": prompt_length,
+            }
+
+        answer = self.answer_template.format(target)
+        example = prompt + answer  # FIX(MZY): avoid putting a bos token before answer.
+        example_ids = self.tokenizer.encode(example)  # [prompt,answer]
+        example_ids.append(self.tokenizer.eos_token_id)  # [prompt,answer,eos]
+        example_ids = torch.tensor(
+            example_ids, dtype=torch.int64
+        )
+        example_ids = torch.cat((audio_pseudo, example_ids))  # [audio,prompt,answer,eos]
+
+        labels_ids = copy.deepcopy(example_ids)  # [audio,prompt,answer,eos]
+        labels_ids[:audio_length + prompt_length] = -1  # [-1,-1,answer,eos];
+        example_mask = example_ids.ge(-1)  # FIX(GZF): [True,True,True,True]
+
+        label_mask = labels_ids.ge(0)  # [False,False,True,True]
+        example_ids[~example_mask] = 0  # [audio,prompt,answer,eos]
+        labels_ids[~label_mask] = self.IGNORE_INDEX  # [-100,-100,answer,eos]
+
+        return {
+            "input_ids": example_ids,
+            "labels": labels_ids,
+            "attention_mask": example_mask,
+            "audio": audio_raw if self.input_type == "raw" else None,
+            "audio_mel": audio_mel if self.input_type == "mel" else None,
+            "audio_length": audio_length,
+            "prompt_length": prompt_length,
+        }
+
+    def pad(self, sequence, max_length, padding_idx=0):
+        if isinstance(sequence, (int, list, tuple)):
+            if len(sequence) < max_length:
+                sequence = sequence + [padding_idx] * (max_length - len(sequence))
+            else:
+                sequence = sequence[:max_length]
+        elif isinstance(sequence, torch.Tensor):
+            if len(sequence) < max_length:
+                sequence = torch.cat(
+                    (sequence, torch.full(([max_length - len(sequence)] + list(sequence.size())[1:]), padding_idx)))
+            else:
+                sequence = sequence[:max_length]
+        elif isinstance(sequence, np.ndarray):
+            if len(sequence) < max_length:
+                sequence = np.concatenate(
+                    (sequence, np.full((max_length - len(sequence),) + sequence.shape[1:], padding_idx)))
+            else:
+                sequence = sequence[:max_length]
+        else:
+            raise Exception("Type mismatch during padding!")
+        return sequence
+        
+    @classmethod
+    def padding(cls, sequence, padding_length, padding_idx=0, padding_side="right"):
+        if isinstance(sequence, (int, list, tuple)):
+            if padding_length >= 0:
+                sequence = sequence + [padding_idx] * padding_length
+            else:
+                sequence = sequence[:padding_length]
+        elif isinstance(sequence, torch.Tensor):
+            if sequence.ndimension() == 2:
+                if padding_length >= 0:
+                    sequence = torch.nn.functional.pad(sequence, (0, padding_length))
+                else:
+                    sequence = sequence[:, :padding_length]
+            else:
+                if padding_length >= 0:
+                    if padding_side == "left":
+                        sequence = torch.cat((torch.full(([padding_length] + list(sequence.size())[1:]), padding_idx), sequence))
+                    else:
+                        sequence = torch.cat((sequence, torch.full(([padding_length] + list(sequence.size())[1:]), padding_idx)))
+                else:
+                    sequence = sequence[:padding_length]
+        elif isinstance(sequence, np.ndarray):
+            if padding_length >= 0:
+                sequence = np.concatenate(
+                    (sequence, np.full((padding_length,) + sequence.shape[1:], padding_idx)))
+            else:
+                sequence = sequence[:padding_length]
+        else:
+            raise Exception("Type mismatch during padding!")
+        return sequence
+
+    def collator(self, samples):
+        assert samples is not None 
+        input_prompt_lengths = [s["audio_length"] + s['prompt_length'] for s in samples] #[120, 48, 82, 42]
+        input_answer_lengths = [len(s["input_ids"]) - s["audio_length"] - s['prompt_length'] for s in samples]  #[0, 0, 0, 0]
