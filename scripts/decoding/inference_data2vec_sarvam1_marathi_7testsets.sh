@@ -42,3 +42,17 @@ ckpt_dir=${CKPT_DIR:-$output_dir/asr_epoch_1_step_32000}
 
 decode_dir=$output_dir/decode_results_$(basename $ckpt_dir)_7testsets
 mkdir -p $decode_dir
+
+test_dir=/speech/abhishek/marathi_data/decode_test/data_ENMR
+
+lora_targets=[q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj]
+
+testsets=(
+    commonvoice_marathi_test
+    fleurs_marathi_test
+    indictts_marathi_test
+    kathbath_marathi_test
+    kathbath_noisy_marathi_test
+    mucs_marathi_test
+    R12_marathi_eval_filtered
+)
