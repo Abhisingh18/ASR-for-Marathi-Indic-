@@ -20,3 +20,6 @@
 | kathbath_noisy | 28.94 |
 | mucs | **26.99** |
 | R12 (preliminary) | see [`../SUMMARY.md`](../SUMMARY.md) |
+
+Only mel-spectrogram-input encoder in this comparison (the rest are raw-waveform). Wins on
+`mucs`, otherwise mid-pack.
