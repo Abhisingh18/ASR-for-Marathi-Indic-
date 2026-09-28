@@ -8,3 +8,15 @@
 | Decode script | [`inference_data2vec_sarvam1_marathi_7testsets.sh`](../../scripts/decoding/inference_data2vec_sarvam1_marathi_7testsets.sh) |
 | Checkpoint evaluated | epoch 1, step 32,000 |
 | Effective batch | 32 (micro-batch 4 x 4 GPUs x grad-accum 2) |
+
+## WER%
+
+| Test set | WER% |
+|---|---|
+| commonvoice | 23.53 |
+| fleurs | 26.77 |
+| indictts | 17.26 |
+| kathbath | 22.73 |
+| kathbath_noisy | 23.22 |
+| mucs | 43.62 |
+| R12 (preliminary) | see [`../SUMMARY.md`](../SUMMARY.md) |
