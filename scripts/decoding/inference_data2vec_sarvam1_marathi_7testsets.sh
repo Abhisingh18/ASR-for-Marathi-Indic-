@@ -69,3 +69,65 @@ for split in "${testsets[@]}"; do
         echo "[FATAL] $val_data_path not found -- run rewrite_marathi_testset_paths.py first" >&2
         continue
     fi
+
+    attempt=1
+    max_attempts=5
+    until /speech/abhishek/miniconda3/envs/slam_llm/bin/python $code_dir/inference_asr_batch_new.py \
+        --config-path "conf" \
+        --config-name "prompt_marathi_ctx.yaml" \
+        hydra.run.dir=$ckpt_dir \
+        ++model_config.file=$code_dir/model/slam_model_asr_new.py:model_factory \
+        ++model_config.llm_name=sarvam-1 \
+        ++model_config.llm_path=$llm_path \
+        ++model_config.llm_dim=2048 \
+        ++model_config.encoder_name=data2vec_aqc \
+        ++model_config.normalize=true \
+        ++dataset_config.normalize=true \
+        ++model_config.encoder_projector_ds_rate=5 \
+        ++model_config.encoder_path=$speech_encoder_path \
+        ++model_config.encoder_dim=1024 \
+        ++model_config.encoder_projector=linear \
+        ++dataset_config.dataset=speech_dataset \
+        ++dataset_config.file=src/slam_llm/datasets/speech_dataset_marathi.py:get_speech_dataset \
+        ++dataset_config.val_data_path=$val_data_path \
+        ++dataset_config.input_type=raw \
+        ++dataset_config.prompt_style=vicuna \
+        ++dataset_config.use_history_context=true \
+        ++dataset_config.inference_mode=true \
+        ++train_config.model_name=asr \
+        ++train_config.freeze_encoder=true \
+        ++train_config.freeze_llm=true \
+        ++train_config.use_peft=true \
+        ++train_config.peft_config.peft_method=lora \
+        ++train_config.peft_config.r=8 \
+        ++train_config.peft_config.lora_alpha=32 \
+        ++train_config.peft_config.target_modules=$lora_targets \
+        ++train_config.peft_config.lora_dropout=0.05 \
+        ++train_config.peft_config.bias=none \
+        ++train_config.peft_config.task_type=CAUSAL_LM \
+        ++train_config.batching_strategy=custom \
+        ++train_config.num_epochs=1 \
+        ++train_config.val_batch_size=2 \
+        ++train_config.num_workers_dataloader=2 \
+        ++train_config.output_dir=$output_dir \
+        ++decode_log=$decode_log \
+        ++ckpt_path=$ckpt_dir/pytorch_model.bin \
+        ++log_config.log_file=${decode_log}.log \
+        ++log_config.use_wandb=false
+    do
+        echo "[retry] $split attempt $attempt failed (exit $?)"
+        attempt=$((attempt+1))
+        if [ $attempt -gt $max_attempts ]; then
+            echo "[FATAL] $split failed after $max_attempts attempts, skipping"
+            break
+        fi
+        sleep 10
+    done
+
+    echo "Done: $split"
+    echo "GT  : ${decode_log}_gt"
+    echo "PRED: ${decode_log}_pred"
+    echo ""
+done
+
+echo "All 7 Marathi testsets done! Results in: $decode_dir/"
