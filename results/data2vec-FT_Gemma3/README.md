@@ -20,3 +20,6 @@
 | kathbath_noisy | **22.14** |
 | mucs | 29.24 |
 | R12 (preliminary) | see [`../SUMMARY.md`](../SUMMARY.md) |
+
+Best overall of the six encoders compared here — the encoder was fine-tuned on Marathi CTC data
+before this SLAM-ASR stage, giving it an in-domain head start over the pretrained-only encoders.
