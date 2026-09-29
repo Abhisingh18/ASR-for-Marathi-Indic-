@@ -19,7 +19,7 @@
 | kathbath | 25.04 |
 | kathbath_noisy | 27.25 |
 | mucs | 34.82 |
-| R12 (preliminary) | see [`../SUMMARY.md`](../SUMMARY.md) |
+| R12 | 56.34 |
 
 Same architecture as the FT row above, but the encoder never saw Marathi-labeled CTC data —
 consistently a few WER points behind, isolating the value of Marathi-specific encoder fine-tuning.
