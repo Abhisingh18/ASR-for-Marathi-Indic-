@@ -20,22 +20,6 @@ same LoRA recipe, only the frozen speech encoder (and, for one row, the LLM) dif
 
 **Bold** = best (lowest WER) for that test set.
 
-## R12 (largest testset, 6,282 utterances) — preliminary, decode still running
-
-As of 2026-09-28 22:37 IST, R12 decoding had reached (rows scored / total):
-
-| Model | Rows scored |
-|---|---|
-| data2vec-FT+Gemma3 | 3,738 / 6,282 |
-| ccc-wav2vec2+Gemma3 | 2,607 / 6,282 |
-| Sarvam-1+FT | 5,950 / 6,282 |
-| data2vec-SSL+Gemma3 | 3,252 / 6,282 |
-| Whisper+Gemma3 | 2,314 / 6,282 |
-| XEUS+Gemma3 | 2,978 / 6,282 |
-
-The `wer_R12_marathi_eval_filtered` files in each model's results folder reflect this partial
-state and will be overwritten with the final score once decoding completes.
-
 ## Takeaways
 
 - **`data2vec-FT + Gemma-3-4B`** (Marathi fine-tuned data2vec-AQC encoder) wins on 5 of 6 complete
