@@ -6,7 +6,7 @@ same LoRA recipe, only the frozen speech encoder (and, for one row, the LLM) dif
 
 **Metric:** WER%, computed with `akshaya_wer.py` (NFC-normalized, punctuation removed).
 
-## WER% — six complete testsets
+## WER% — all seven testsets
 
 | Test set | data2vec-FT+Gemma3 | ccc-wav2vec2+Gemma3 | Sarvam-1+FT | data2vec-SSL+Gemma3 | Whisper+Gemma3 | XEUS+Gemma3 |
 |---|---|---|---|---|---|---|
@@ -16,6 +16,7 @@ same LoRA recipe, only the frozen speech encoder (and, for one row, the LLM) dif
 | kathbath         | **21.29** | 23.74 | 22.73 | 25.04 | 26.99 | 31.96 |
 | kathbath_noisy   | **22.14** | 23.97 | 23.22 | 27.25 | 28.94 | 33.38 |
 | mucs             | 29.24 | 27.96 | 43.62 | 34.82 | **26.99** | 35.28 |
+| R12 (6,282 utt.) | 58.20 | 56.51 | 57.89 | 56.34 | **50.44** | 59.54 |
 
 **Bold** = best (lowest WER) for that test set.
 
