@@ -20,3 +20,6 @@
   model factory instead of the one actually used to train the checkpoint being decoded.
 - Ran all 6 comparison models' epoch-1 (step 32,000) checkpoints through the same 7-test-set
   decode + WER pipeline for a controlled comparison (`results/SUMMARY.md`).
+- R12 (the largest test set, 6,282 utterances) finished decoding for all 6 models; folded its
+  final WER into the main results table. It flips the ranking seen on the other six test sets --
+  Whisper+Gemma-3-4B wins clearly here despite being mid-pack elsewhere.
