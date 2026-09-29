@@ -31,3 +31,10 @@ same LoRA recipe, only the frozen speech encoder (and, for one row, the LLM) dif
   it has never seen labeled Marathi audio before this stage, unlike the other encoders.
 - Swapping the LLM (Sarvam-1 vs Gemma-3-4B, same data2vec-FT encoder) matters less than swapping
   the encoder, except on `mucs`, where Sarvam-1 falls far behind (43.62 vs 29.24).
+- **R12 flips the ranking.** On this largest test set (6,282 utterances, in-house filtered eval
+  audio), `Whisper + Gemma-3-4B` wins clearly (50.44%, ~6-9 points ahead of every other model),
+  even though it was mid-pack or worse on all six other test sets. Whisper's much larger
+  pretraining corpus (680k+ hours, vs the Marathi-only fine-tuning the other encoders had) likely
+  generalizes better to R12's audio conditions than the other five encoders' in-domain-tuned
+  representations do. Every model's WER is also far higher on R12 (50-60%) than on the other six
+  test sets (16-44%), suggesting R12 itself is simply a harder/noisier/more out-of-domain set.
