@@ -72,7 +72,7 @@ Full encoder specs: [`docs/ENCODERS.md`](docs/ENCODERS.md)
 
 ## 📊 Results
 
-**WER% on 6 complete test sets** (checkpoint: epoch 1 / step 32,000 for every model — controlled comparison):
+**WER% on all 7 test sets** (checkpoint: epoch 1 / step 32,000 for every model — controlled comparison):
 
 | Test set | data2vec-FT+Gemma3 | ccc-wav2vec2+Gemma3 | Sarvam-1+FT | data2vec-SSL+Gemma3 | Whisper+Gemma3 | XEUS+Gemma3 |
 |---|---|---|---|---|---|---|
@@ -82,9 +82,11 @@ Full encoder specs: [`docs/ENCODERS.md`](docs/ENCODERS.md)
 | kathbath | **21.29** | 23.74 | 22.73 | 25.04 | 26.99 | 31.96 |
 | kathbath_noisy | **22.14** | 23.97 | 23.22 | 27.25 | 28.94 | 33.38 |
 | mucs | 29.24 | 27.96 | 43.62 | 34.82 | **26.99** | 35.28 |
+| R12 (6,282 utt.) | 58.20 | 56.51 | 57.89 | 56.34 | **50.44** | 59.54 |
 
-**Bold = best (lowest WER)**. A 7th, larger test set (R12, 6,282 utterances) is still decoding —
-see [`results/SUMMARY.md`](results/SUMMARY.md) for its preliminary numbers and full takeaways.
+**Bold = best (lowest WER)**. Note the flip on R12 (the largest, hardest test set): Whisper wins
+clearly there despite being mid-pack or worse everywhere else — see
+[`results/SUMMARY.md`](results/SUMMARY.md) for the full takeaways.
 
 ## 📁 Repository layout
 
